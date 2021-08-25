@@ -1,6 +1,6 @@
 {
   "vendor": "vtex",
-  "name": "store-theme",
+  "name": "aws-theme",
   "version": "4.4.2",
   "builders": {
     "styles": "2.x",
