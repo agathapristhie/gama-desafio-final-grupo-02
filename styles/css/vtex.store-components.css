@@ -1,14 +1,22 @@
 .notificationBarContainer {
+<<<<<<< HEAD
   background-color: #232F3E;
   color: #fff;
+=======
+  background-color: #232f3e;
+  color: green;
+>>>>>>> 0e27cf628f05e0e570534300615f7ef749b37006
   font-weight: 700;
   font-size: 12px;
   text-decoration: underline;
 }
 
+<<<<<<< HEAD
 .notificationBarContainer:hover{
   color: #F19927;
 }
+=======
+>>>>>>> 0e27cf628f05e0e570534300615f7ef749b37006
 
 .infoCardContainer--info-card-home {
   max-width: 1520px;

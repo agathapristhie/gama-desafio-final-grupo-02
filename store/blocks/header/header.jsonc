@@ -28,12 +28,23 @@
     }
   },
   "flex-layout.row#2-desktop": {
+<<<<<<< HEAD
     "children": [
       "notification.bar#home"
     ],
+=======
+    "children": ["flex-layout.col#logoaws", "notification.bar#home"],
+>>>>>>> 0e27cf628f05e0e570534300615f7ef749b37006
     "props": {
       "fullWidth": "true"
     }
+  },
+  "flex-layout.col#logoaws":{
+    "props":{
+      "verticalAlign": "middle",
+      "blockClass": "logoaws"
+    },
+    "children": ["image#logodesktop"]
   },
   "notification.bar#home": {
     "props": {
@@ -86,6 +97,7 @@
       "minicart.v2"
     ]
   },
+<<<<<<< HEAD
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
@@ -103,11 +115,24 @@
     ]
   },
   "logo#desktop": {
+=======
+ "flex-layout.col#logo-desktop": {
+  "props": {
+     "verticalAlign": "middle"
+   },
+   "children": []
+ },
+ "flex-layout.col#category-menu": {
+   "props": {
+     "verticalAlign": "middle"
+   },
+   "children": ["vtex.menu@2.x:menu#category-menu"]
+ },
+  "image#logodesktop": {
+>>>>>>> 0e27cf628f05e0e570534300615f7ef749b37006
     "props": {
       "title": "Logo",
-      "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "src": "assets/logo-aws.png"
     }
   },
   "header-layout.mobile": {
