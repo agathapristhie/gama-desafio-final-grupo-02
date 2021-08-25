@@ -17,8 +17,8 @@
 }
 
 .flexRowContent--menu-link {
-  background-color: #03044e;
-  color: #fff;
+  background-color: #232F3E;
+  color: red;
 }
 
 .flexRowContent--main-header {
@@ -56,6 +56,17 @@
 .flexCol--filterCol {
   max-width: 500px;
   min-width: 230px;
+}
+
+.flexCol--logoaws{
+  background-color: #232F3E;
+
+}
+
+.flexColChild--logoaws{
+  width: 10%;
+  margin-left: 5%;
+  margin-top: 2%;
 }
 
 .flexCol--productCountCol {
