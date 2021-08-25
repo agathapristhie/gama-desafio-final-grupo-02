@@ -1,0 +1,20 @@
+{
+  "vendor": "hiringcoders2021",
+  "name": "upmedalpriapp",
+  "version": "3.0.6-beta.0",
+  "title": "DESAFIO UPMEDAL - PRISCILA",
+  "description": "DESAFIO UPMEDAL PARA A GAMA ACADEMY",
+  "builders": {
+    "store": "0.x",
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x"
+  },
+  "dependencies": {},
+  "registries": [
+    "smartcheckout",
+    "vtex.styleguide: 9.x"
+  ],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
