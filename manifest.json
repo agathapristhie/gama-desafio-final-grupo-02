@@ -69,7 +69,7 @@
     "vtex.css-handles": "1.x"
   },
   "peerDependencies": {
-    
+
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
