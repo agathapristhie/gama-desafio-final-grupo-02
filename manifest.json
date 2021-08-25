@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "vendor": "hiringcoders202102",
+=======
+  "vendor": "vtex",
+>>>>>>> 13ca73fd2e310904f151323ace7441c53fc8f1e7
   "name": "store-theme",
   "version": "4.4.2",
   "builders": {
@@ -65,7 +69,7 @@
     "vtex.css-handles": "1.x"
   },
   "peerDependencies": {
-    "vtex.reviews-and-ratings": "2.x"
+    
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
