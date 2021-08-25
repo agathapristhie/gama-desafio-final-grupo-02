@@ -1,5 +1,5 @@
 {
-  "vendor": "vtex",
+  "vendor": "hiringcoders202102",
   "name": "aws-theme",
   "version": "4.4.2",
   "builders": {
@@ -65,7 +65,7 @@
     "vtex.css-handles": "1.x"
   },
   "peerDependencies": {
-    
+
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
