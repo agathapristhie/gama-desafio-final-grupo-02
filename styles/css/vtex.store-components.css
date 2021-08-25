@@ -1,10 +1,11 @@
 .notificationBarContainer {
-  background-color: #232F3E;
-  color: #F19927;
+  background-color: #232f3e;
+  color: green;
   font-weight: 700;
   font-size: 12px;
   text-decoration: underline;
 }
+
 
 .infoCardContainer--info-card-home {
   max-width: 1520px;
