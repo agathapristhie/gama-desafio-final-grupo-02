@@ -1,10 +1,10 @@
-.notificationBarContainer {
+/* .notificationBarContainer {
   background-color: #232f3e;
   color: green;
   font-weight: 700;
   font-size: 12px;
   text-decoration: underline;
-}
+} */
 
 
 .infoCardContainer--info-card-home {
@@ -111,4 +111,7 @@
   color: #3f3f40;
   font-weight: bold;
   font-size: 30px;
+}
+.imageElement--logoheader {
+  padding-left: 27px;
 }
