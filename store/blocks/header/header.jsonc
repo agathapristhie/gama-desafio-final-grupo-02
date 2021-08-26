@@ -106,7 +106,7 @@
     "props": {
       "title": "Logo",
       "src": "assets/logo-aws.png",
-      "width": 80
+      "width": 60
     }
   },
   "header-layout.mobile": {
