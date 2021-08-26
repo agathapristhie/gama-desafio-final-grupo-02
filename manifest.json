@@ -65,7 +65,6 @@
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x"
   },
-
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x"
   },
