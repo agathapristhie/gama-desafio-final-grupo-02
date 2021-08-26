@@ -1,0 +1,6 @@
+.styledLinkContent{
+    color: #ffff;
+}
+.styledLinkContent:hover{
+    color: #FFB100;
+}

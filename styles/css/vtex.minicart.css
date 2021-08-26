@@ -1,0 +1,6 @@
+.cartIcon{
+    color: #ffff;
+}
+.cartIcon:hover{
+    border-bottom: solid #FFB100;
+}

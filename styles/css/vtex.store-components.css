@@ -29,7 +29,7 @@
   font-size: 26px;
 }
 
-.inputGroup {
+/* .inputGroup {
   padding-bottom: 4px;
   display: flex;
   color: #fff;
@@ -47,12 +47,11 @@
 }
 
 .inputGroup :global(.vtex-button) {
-  background-color: transparent;
   color: #fff;
   border: none;
   margin-right: -24px;
 }
-
+ */
 .buttonContainer {
   padding-top: 0px;
 }
@@ -114,4 +113,7 @@
 }
 .imageElement--logoheader {
   padding-left: 27px;
+}
+.searchBarContainer{
+  margin: auto;
 }

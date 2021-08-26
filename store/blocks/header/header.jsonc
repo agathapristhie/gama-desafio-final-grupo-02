@@ -14,7 +14,7 @@
   "header-row#logo": {
   "children": [
     "image#logodesktop",
-    "header-spacer",
+//    "header-spacer",
     "search-bar",
     "locale-switcher",
     "login",
@@ -36,7 +36,7 @@
 },
   "search-bar": {
     "props": {
-      "maxWidth": 250
+      "maxWidth": 350
     }
   },
   "login": {
