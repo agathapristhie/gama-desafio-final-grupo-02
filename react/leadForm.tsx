@@ -4,7 +4,7 @@ import React from 'react'
 
 import {useState} from 'react'
 
-import callAPI from  './callApi'
+import createAPI from  './createLeadAPI'
 
 import newId from './newId'
 
@@ -21,16 +21,18 @@ const leadForm: React.FC = () => { //formulário para cadastro de leads
   const { register, handleSubmit } = useForm({ shouldUseNativeValidation: true }); //usando o hook useForm
   const [loading, setLoading] = useState(false);
   // eslint-disable-next-line @typescript-eslint/explicit-member-accessibility
-    const onSubmit = handleSubmit((clientdata) =>{ //ao submeter os dados, eles são armazenados localmente e é feita uma chamada para API gateway, que armazena os dados no dynamo.db
-    const clientStore = JSON.stringify(clientdata);
-    localStorage.setItem('@client', clientStore);
+    const onSubmit = handleSubmit((clientdata) =>{ //ao submeter os dados, eles são armazenados
+      // é feita uma chamada para API gateway, que armazena os dados no dynamo.db
+  //  const clientStore = JSON.stringify(clientdata);
+    //localStorage.setItem('@client', clientStore);
 
     const id = newId();
-    setLoading(true);
-    callAPI(id, clientdata.name, clientdata.phone, clientdata.email);
-    setLoading(false);
-    })
 
+    setLoading(true);
+    createAPI(id, clientdata.name, clientdata.phone, clientdata.email);
+    setLoading(false);
+
+    })
 
     return (
       <div key="leadForm" className="leadFormContainer">

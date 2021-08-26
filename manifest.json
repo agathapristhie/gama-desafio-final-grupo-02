@@ -1,9 +1,9 @@
 {
   "vendor": "hiringcoders202102",
-  "name": "upmedalpriapp",
-  "version": "3.0.8-beta.0",
-  "title": "DESAFIO UPMEDAL - PRISCILA",
-  "description": "DESAFIO UPMEDAL PARA A GAMA ACADEMY",
+  "name": "desafiofinalgrupo02",
+  "version": "0.0.1",
+  "title": "DESAFIO FINAL - GRUPO 02 - AWS",
+  "description": "DESAFIO FINAL PARA A GAMA ACADEMY",
   "builders": {
     "store": "0.x",
     "react": "3.x",
