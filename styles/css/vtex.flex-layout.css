@@ -66,6 +66,10 @@
 
 }
 
+.flexColChild{
+  background-color: #232F3E;
+}
+
 .flexColChild--logoaws{
   width: 10%;
   margin-left: 5%;
