@@ -65,10 +65,6 @@
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x"
   },
-<<<<<<< HEAD
-=======
-
->>>>>>> 0e27cf628f05e0e570534300615f7ef749b37006
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x"
   },

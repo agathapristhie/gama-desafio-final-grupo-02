@@ -28,27 +28,36 @@
     }
   },
   "flex-layout.row#2-desktop": {
-<<<<<<< HEAD
     "children": [
-      "notification.bar#home"
+      "flex-layout.col#logoaws",
+      "flex-layout.col#menubottons"
     ],
-=======
-    "children": ["flex-layout.col#logoaws", "notification.bar#home"],
->>>>>>> 0e27cf628f05e0e570534300615f7ef749b37006
     "props": {
       "fullWidth": "true"
     }
   },
-  "flex-layout.col#logoaws":{
-    "props":{
+  "flex-layout.col#logoaws": {
+    "props": {
       "verticalAlign": "middle",
       "blockClass": "logoaws"
     },
-    "children": ["image#logodesktop"]
+    "children": [
+      "image#logodesktop"
+    ]
   },
-  "notification.bar#home": {
+  "flex-layout.col#menubottons": {
+    "children": [
+      "login"
+    ]
+  },
+  "login": {
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "blockClass": "loginbutton"
     }
   },
   "flex-layout.row#3-desktop": {
@@ -61,8 +70,7 @@
     },
     "children": [
       "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
+      "flex-layout.col#spacer"
     ]
   },
   "flex-layout.col#spacer": {
@@ -97,14 +105,11 @@
       "minicart.v2"
     ]
   },
-<<<<<<< HEAD
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": [
-      "logo#desktop"
-    ]
+    "children": []
   },
   "flex-layout.col#category-menu": {
     "props": {
@@ -114,22 +119,7 @@
       "vtex.menu@2.x:menu#category-menu"
     ]
   },
-  "logo#desktop": {
-=======
- "flex-layout.col#logo-desktop": {
-  "props": {
-     "verticalAlign": "middle"
-   },
-   "children": []
- },
- "flex-layout.col#category-menu": {
-   "props": {
-     "verticalAlign": "middle"
-   },
-   "children": ["vtex.menu@2.x:menu#category-menu"]
- },
   "image#logodesktop": {
->>>>>>> 0e27cf628f05e0e570534300615f7ef749b37006
     "props": {
       "title": "Logo",
       "src": "assets/logo-aws.png"
