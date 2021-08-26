@@ -105,7 +105,8 @@
   "image#logodesktop": {
     "props": {
       "title": "Logo",
-      "src": "assets/logo-aws.png"
+      "src": "assets/logo-aws.png",
+      "width": 80
     }
   },
   "header-layout.mobile": {
