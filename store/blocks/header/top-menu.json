@@ -1,13 +1,15 @@
 {
   "vtex.menu@2.x:menu#websites": {
     "children": [
-      "menu-item#shop",
-      "menu-item#about-us"
+      "menu-item#about-us",
+      "menu-item#Análises",
+      "menu-item#GerenciamentoNuvem",
+      "menu-item#Computação"
     ]
   },
-  "menu-item#shop": {
+  "menu-item#Análises": {
     "props": {
-      "id": "menu-item-shop",
+      "id": "menu-item-Análises",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -15,28 +17,38 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
+        "tagTitle": "Análises",
+        "text": "Análises"
       }
     }
   },
-  "vtex.menu@2.x:menu#institutional": {
-    "children": [
-      "menu-item#vtex-website"
-    ]
-  },
-  "menu-item#vtex-website": {
+  "menu-item#GerenciamentoNuvem": {
     "props": {
-      "id": "menu-item-vtex-website",
+      "id": "menu-item-GerenciamentoNuvem",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
+        "type": "internal",
+        "href": "#",
         "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "visit vtex.com"
+        "tagTitle": "Gerenciamento Nuvem",
+        "text": "Gerenciamento Financeiro de Nuvem"
+      }
+    }
+  },
+  "menu-item#Computação": {
+    "props": {
+      "id": "menu-item-Computação",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Computação",
+        "text": "Computação"
       }
     }
   }
