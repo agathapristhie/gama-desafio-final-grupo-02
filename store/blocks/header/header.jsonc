@@ -1,42 +1,51 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "children": [
-    "header-row#logo",
-    "header-row#menu"
+      "header-row#logo",
+      "header-row#menu"
     ]
   },
   "header-row#logo": {
-  "children": [
-    "image#logodesktop",
-//    "header-spacer",
-    "search-bar",
-    "locale-switcher",
-    "login",
-    "minicart.v2"
-  ],
-  "props": {
-    "fullWidth": true,
-    "sticky": true
-  }
-},
-"header-row#menu": {
-  "children": [
-    "vtex.menu@2.x:menu#websites"
-  ],
-  "props": {
-    "fullWidth": true,
-    "sticky": true
-  }
-},
+    "children": [
+      "logo#desktop",
+      "header-spacer",
+      //"search-bar",
+      "locale-switcher",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "fullWidth": true,
+      "sticky": true
+    }
+  },
+  "header-row#menu": {
+    "children": [
+      "vtex.menu@2.x:menu#websites",
+      "header-spacer",
+      "search-bar"
+    ],
+    "props": {
+      "fullWidth": true,
+      "sticky": true
+    }
+  },
   "search-bar": {
     "props": {
-      "maxWidth": 350
+      //"maxWidth": 100,
+      "containerMode": "overlay"
     }
   },
   "login": {
@@ -54,19 +63,23 @@
       "width": "grow"
     }
   },
-  "image#logodesktop": {
+  "logo#desktop": {
     "props": {
       "title": "Logo",
-      "src": "assets/logo-aws.png",
-      "width": 60,
-      "blockClass": "logoheader"
+      "href": "/",
+      "url": "assets/logo-aws.png",
+      "width": "70"
     }
-  },
+  },  
   "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
+    "children": [
+      "sticky-layout#1-mobile"
+    ]
   },
   "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
+    "children": [
+      "flex-layout.row#1-mobile"
+    ]
   },
   "flex-layout.row#1-mobile": {
     "children": [
@@ -84,7 +97,9 @@
     }
   },
   "drawer": {
-    "children": ["menu#drawer"]
+    "children": [
+      "menu#drawer"
+    ]
   },
   "menu#drawer": {
     "children": [
@@ -96,12 +111,11 @@
       "orientation": "vertical"
     }
   },
-
   "logo#mobile": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "url": "assets/logo-aws.png",
       "width": "70"
     }
   }

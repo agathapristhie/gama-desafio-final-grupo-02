@@ -1,6 +1,12 @@
-.cartIcon{
-    color: #ffff;
+.cartIcon {
+  color: #ffff;
 }
-.cartIcon:hover{
-    border-bottom: solid #FFB100;
+.cartIcon:hover {
+  color: #ffb100;
 }
+.minicartQuantityBadge {
+  background-color: #ffb100;
+  color: #ffff;
+}
+
+

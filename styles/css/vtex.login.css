@@ -2,4 +2,15 @@
   .label{
     color: #ffffff;
   }
- 
+  .label:hover{
+    color: #FFB100;
+ }
+ .formTitle{
+   color: #FFB100;
+ }
+  /* .emailPasswordOptionBtn{
+    background-color: #FFB100;
+ }*/
+ .button_label{
+  background-color: #FFB100;
+ } 
