@@ -8,7 +8,7 @@ import createAPI from  './createLeadAPI'
 
 import newId from './newId'
 
-import { useForm} from 'react-hook-form';
+import { useForm} from 'react-hook-form'
 
 import { Form } from './components/Form/stylesForm'
 
@@ -46,7 +46,7 @@ const leadForm: React.FC = () => { //formulário para cadastro de leads
           </p>
 
           <p> E-mail
-            <input
+            <input type="email"
                       {...register("email", { required: "Por favor, insira seu e-mail." })}
                       />
           </p>
