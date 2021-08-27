@@ -1,0 +1,16 @@
+{
+  "store.custom#lead": {
+    "blocks": [
+      "flex-layout.row#lead",
+      "leadForm"
+    ]
+  },
+
+  "flex-layout.row#lead": {
+    "children": [
+      "image#mobile-phone"
+    ]
+  }
+
+
+}

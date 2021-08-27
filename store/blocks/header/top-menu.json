@@ -1,0 +1,55 @@
+{
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "menu-item#about-us",
+      "menu-item#Análises",
+      "menu-item#GerenciamentoNuvem",
+      "menu-item#Computação"
+    ]
+  },
+  "menu-item#Análises": {
+    "props": {
+      "id": "menu-item-Análises",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Análises",
+        "text": "Análises"
+      }
+    }
+  },
+  "menu-item#GerenciamentoNuvem": {
+    "props": {
+      "id": "menu-item-GerenciamentoNuvem",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Gerenciamento Nuvem",
+        "text": "Gerenciamento Financeiro de Nuvem"
+      }
+    }
+  },
+  "menu-item#Computação": {
+    "props": {
+      "id": "menu-item-Computação",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Computação",
+        "text": "Computação"
+      }
+    }
+  }
+}
