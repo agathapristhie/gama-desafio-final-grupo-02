@@ -16,7 +16,7 @@
   }
 }
 
-.flexRowContent--menu-link {
+/* .flexRowContent--menu-link {
   background-color: #232F3E;
   color: #fff;
 }
@@ -61,20 +61,18 @@
   min-width: 230px;
 }
 
-.flexCol--logoaws{
-  background-color: #232F3E;
-
-}
+/* .flexCol--logoaws{
+  background-color: #fff;
+} */
 
 .flexColChild{
-  background-color: #232F3E;
+  background-color: none;
 }
 
-.flexColChild--logoaws{
-  width: 10%;
+/* .flexColChild--logoaws{
   margin-left: 5%;
-  margin-top: 2%;
-}
+  margin-top: 5%;
+} */
 
 .flexCol--productCountCol {
   align-items: flex-start;
