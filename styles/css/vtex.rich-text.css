@@ -1,5 +1,8 @@
+/*texto dos icones abaixo do slider home*/
 .container--deals {
-  color: #ffffff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
   text-align: center;
   justify-content: center;
 }

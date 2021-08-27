@@ -40,11 +40,11 @@
   color: #F19927;
 }
 .flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
-  color: #727273;
+  color: #fff;
   font-size: 14px;
 }
 .flexRow--deals {
-  background-color: #a7afbd;
+  background-color: #ffffff;
   padding: 14px 0px;
 }
 
@@ -65,12 +65,13 @@
   background-color: #232F3E;
 
 }
-
+/*icones abaixo do slider*/
 .flexColChild{
   background-color: #232F3E;
 }
 
 .flexColChild--logoaws{
+  background-color: #232F3E;
   width: 10%;
   margin-left: 5%;
   margin-top: 2%;
@@ -110,3 +111,4 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+

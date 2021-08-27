@@ -19,13 +19,13 @@
   },
   "image#deal1": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "maxHeight": "24px"
+      "src": "https://hiringcoders202102.vtexassets.com/assets/vtex.file-manager-graphql/images/10a01377-5362-4b70-9f9f-2e5783906489___236ba39082ee3893ae3835dad91f4749.png",
+      "maxHeight": "135px"
     }
   },
   "rich-text#deal1": {
     "props": {
-      "text": "Free shipping",
+      "text": "Nível gratuito estendido do Amazon Lightsail",
       "blockClass": "deals"
     }
   },
@@ -37,13 +37,13 @@
   },
   "image#deal2": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
-      "maxHeight": "24px"
+      "src": "https://hiringcoders202102.vtexassets.com/assets/vtex.file-manager-graphql/images/1374f6c4-f9cf-4798-b735-29c939107f85___7ae1c308416fd7b7ae9a0f5dce997156.png",
+      "maxHeight": "135px"
     }
   },
   "rich-text#deal2": {
     "props": {
-      "text": "One day delivery",
+      "text": "Evento virtual AWS Store Day",
       "blockClass": "deals"
     }
   },
@@ -55,13 +55,13 @@
   },
   "image#deal3": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/store.png",
-      "maxHeight": "24px"
+      "src": "https://hiringcoders202102.vtexassets.com/assets/vtex.file-manager-graphql/images/911cbfcc-3f8c-4051-97a4-6c2ce0f62674___6482fca2cd9e91847671335bf7606cc1.png",
+      "maxHeight": "135px"
     }
   },
   "rich-text#deal3": {
     "props": {
-      "text": "Pick up in store",
+      "text": "Amazon Elasticsearch Service com suporte para armazenamento inativo",
       "blockClass": "deals"
     }
   },
@@ -73,13 +73,13 @@
   },
   "image#deal4": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
-      "maxHeight": "24px"
+      "src": "https://hiringcoders202102.vtexassets.com/assets/vtex.file-manager-graphql/images/90a01d1c-3ae0-4772-9917-1856eb2b52c8___41d0a13d0970a7934472517ecc0735fd.png",
+      "maxHeight": "135px"
     }
   },
   "rich-text#deal4": {
     "props": {
-      "text": "Exclusive deals",
+      "text": "Instâncias do EC2 com a tecnologia AMD",
       "blockClass": "deals"
     }
   }
