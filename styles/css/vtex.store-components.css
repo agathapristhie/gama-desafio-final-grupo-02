@@ -1,4 +1,4 @@
-.notificationBarContainer {
+/* .notificationBarContainer {
   background-color: #232f3e;
   color: green;
   font-weight: 700;
@@ -32,7 +32,38 @@
   font-size: 26px;
 }
 
-.inputGroup {
+.searchBarContainer {
+  width: 238px;
+  margin-right: none;
+}
+::placeholder {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border: none;
+  border-bottom: thin solid #ffb100;
+  border-radius: 0;
+}
+
+.searchBarContainer :global(.vtex-input__suffix) {
+  background: transparent;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  background: transparent;
+  color: #ffffff;
+}
+.searchBarIcon--search {
+  color: #ffffff;
+}
+.searchBarIcon--search:hover {
+  color: #ffb100;
+}
+
+/* .inputGroup {
   padding-bottom: 4px;
   display: flex;
   color: #fff;
@@ -50,12 +81,11 @@
 }
 
 .inputGroup :global(.vtex-button) {
-  background-color: transparent;
   color: #fff;
   border: none;
   margin-right: -24px;
 }
-
+ */
 .buttonContainer {
   padding-top: 0px;
 }
@@ -135,3 +165,11 @@
 .imageElement--filter-logos:hover {
   filter: none!important;
 }
+/* .imageElement--logoheader {
+  padding-left: 27px;
+} */
+.logoImage {
+  width: 60px;
+  padding-top: 10%;
+}
+

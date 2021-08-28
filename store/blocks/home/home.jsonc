@@ -37,7 +37,7 @@
     }
   },
 
-  "slider-layout#first": {
+  "slider-layout#demo-images": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,

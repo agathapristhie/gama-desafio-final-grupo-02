@@ -1,0 +1,12 @@
+.cartIcon {
+  color: #ffff;
+}
+.cartIcon:hover {
+  color: #ffb100;
+}
+.minicartQuantityBadge {
+  background-color: #ffb100;
+  color: #ffff;
+}
+
+
