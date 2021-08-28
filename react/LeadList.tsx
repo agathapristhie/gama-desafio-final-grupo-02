@@ -18,7 +18,7 @@ export default function LeadList() {
             <li>Nome: {lead.name}</li> 
             <li>Email: {lead.email}</li> 
             <li>Telefone: {lead.phone}</li> 
-            <li>Data cadastro: {lead.date}</li> 
+            <li>Data: {lead.date}</li> 
             <li>Tipo: {lead.client ? 'cliente' : 'prospecto'}</li> 
           </LeadContainer>
         )
