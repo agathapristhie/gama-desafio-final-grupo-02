@@ -150,11 +150,11 @@
 }
 
 
-.stretchChildrenWidth--filter.logos {
+.stretchChildrenWidth--filter-logos {
   filter: grayscale(100%);
 }
 
-.stretchChildrenWidth--inside9:hover {
+.stretchChildrenWidth--filter-logos:hover {
   filter: none!important;
 }
 
