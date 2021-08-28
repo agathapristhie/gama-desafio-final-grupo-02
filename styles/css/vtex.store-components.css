@@ -25,6 +25,13 @@
   word-break: break-word;
 }
 
+.infoCardSubhead{
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 60px;
+  word-break: break-word;
+}
+
 .infoCardImage--info-card-home{
   max-height: 1000px;
 }
