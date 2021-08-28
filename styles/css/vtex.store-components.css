@@ -1,10 +1,14 @@
-/* .notificationBarContainer {
+.notificationBarContainer {
   background-color: #232f3e;
   color: #fff;
   font-weight: 700;
   font-size: 12px;
   text-decoration: underline;
-} */
+}
+
+.notificationBarContainer:hover{
+  color: #F19927;
+}
 
 .infoCardContainer--info-card-home {
   width: 100%;
