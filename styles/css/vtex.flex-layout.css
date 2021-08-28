@@ -70,11 +70,10 @@
   background-color: #232F3E;
 } */
 
-.flexColChild--logoaws{
-  width: 10%;
+/* .flexColChild--logoaws{
   margin-left: 5%;
-  margin-top: 2%;
-}
+  margin-top: 5%;
+} */
 
 .flexCol--productCountCol {
   align-items: flex-start;
