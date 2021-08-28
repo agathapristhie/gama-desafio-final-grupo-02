@@ -1,0 +1,116 @@
+{
+  "flex-layout.row#about-us": {
+    "children": [
+      "image#mobile-phone",
+      "flex-layout.col#text-about-us"
+    ],
+
+    "props" : {
+      "blockClass": "content-info-about-us"
+    }
+  },
+  "flex-layout.col#text-about-us": {
+    "children": [
+      "rich-text#title-about-us",
+      "rich-text#about-us"
+    ],
+    "props": {
+      "blockclass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-about-us": {
+    "props": {
+      "text":
+      "# Computação em nuvem com a AWS.",
+      "blockClass": "title"
+    }
+  },
+
+  "image#mobile-phone": {
+    "props": {
+      "src": "assets/banner-aws.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "storePrint"
+    }
+  },
+  "rich-text#about-us": {
+    "props": {
+      "text": "A Amazon Web Services (AWS) é a plataforma de nuvem mais adotada e mais abrangente do mundo, oferecendo mais de 200 serviços completos de datacenters em todo o mundo. Milhões de clientes, incluindo as startups de crescimento mais rápido, grandes empresas e os maiores órgãos governamentais, estão usando a AWS para reduzirem seus custos, ficarem mais ágeis e inovarem mais rapidamente..",
+      "blockClass": "about"
+    }
+  },
+
+  "flex-layout.row#about" : {
+    "title" : "Sobre",
+    "props": {
+      "blockClass" : "about-content"
+    },
+    "children" : [
+      "flex-layout.col#text-info"
+    ]
+  },
+
+  "flex-layout.col#text-info" : {
+
+    "props" : {
+      "blockClass": "about-info-content" 
+    },
+
+    "children": [
+      "rich-text#title-about",
+      "rich-text#about-info",
+      "flex-layout.col#content-info"
+    ]
+  },
+
+  "flex-layout.col#content-info": {
+    "props" : {
+      "blockClass" : "content-info"
+    },
+    
+    "children" : [
+      "rich-text#low-cost",
+      "rich-text#agility-elasticity",
+      "rich-text#open-flexible"
+    ]
+  },
+
+  "rich-text#title-about" : {
+    "props" : {
+      "text": "## Sobre",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "title-about"
+    }
+  },
+
+  "rich-text#about-info" : {
+    "props" : {
+      "blockClass" : "card-info",
+      "text" : "Em 2006, a Amazon Web Services (AWS) começou a oferecer serviços de infraestrutura de TI para empresas por meio de serviços web – hoje conhecidos como computação em nuvem. Um dos principais benefícios da computação em nuvem é a oportunidade de substituir diretamente gastos com a infraestrutura principal por preços variáveis baixos, que se ajustam de acordo com sua empresa. Com a Nuvem, as empresas não precisam mais planejar ou adquirir servidores, assim como outras infraestruturas de TI, com semanas ou meses de antecedência. Em vez disso, podem instantaneamente rodar centenas de milhares de servidores em minutos e oferecer resultados mais rapidamente. Atualmente, a Amazon Web Services oferece uma plataforma de infraestrutura altamente confiável, escalável e de baixo custo na nuvem que potencializa centenas de milhares de empresas em 190 países ao redor do mundo. Com datacenters localizados nos EUA, Europa, Brasil, Cingapura, Japão e Austrália, clientes de todos os setores estão tendo vantagens com os seguintes benefícios:"
+    }
+  },
+
+  "rich-text#low-cost" : {
+    "props" : {
+      "blockClass": "card-info",
+      "text" : "### Baixo custo \n\n A AWS oferece preços baixos e do tipo pague o que usar, sem despesas iniciais nem compromissos em longo prazo. Somos capazes de construir e gerenciar uma infraestrutura em escala global e passar os benefícios de redução de custos para você sob a forma de preços mais baixos. Com a eficiência de nosso dimensionamento e expertise, foi possível reduzir preços em 15 diferentes ocasiões nos últimos quatro anos. Visite o Centro de informações sobre economia para saber mais."
+    }
+  },
+
+  "rich-text#agility-elasticity" : {
+    "props" : {
+      "blockClass": "card-info",
+      "text" : "### Agilidade e elasticidade instantânea \n\n A AWS fornece uma ampla infraestrutura de nuvem global que permite realizar mudanças, experimentar e interagir rapidamente. Em vez de esperar semanas ou meses pelo hardware, você pode instantaneamente implantar novos aplicativos, expandir instantaneamente à medida que sua carga de trabalho cresce e instantaneamente reduzir com base na demanda. Se você precisa de um ou milhares de servidores virtuais, se precisa deles por algumas horas ou todos os dias, ainda assim você só paga pelo que utiliza. Visite o Centro de informações sobre arquitetura para saber mais."
+    }
+  },
+
+  "rich-text#open-flexible" : {
+    "props" : {
+      "text" : "### Aberta e flexível \n\n A AWS é uma plataforma e um sistema operacional de linguagem independente. Você escolhe a plataforma de desenvolvimento ou o modelo de programação que faz mais sentido para o seu negócio. Você pode escolher os serviços que deseja usar, um ou vários, e escolher como usá-los. Essa flexibilidade permite que você se concentre na inovação, não na infraestrutura. Faça o download do Whitepaper sobre a visão geral da AWS."
+    }
+  }
+}
