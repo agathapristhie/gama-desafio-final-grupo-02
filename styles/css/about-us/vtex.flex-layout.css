@@ -1,0 +1,14 @@
+.flexCol--about-info-content {
+  width: 960px !important;
+}
+
+.flexColChild--content-info {
+  border: 1px solid;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.flexRow--content-info-about-us {
+  background: rgb(212, 212, 212);
+}
