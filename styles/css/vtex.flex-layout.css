@@ -157,3 +157,7 @@
 .stretchChildrenWidth--inside9:hover {
   filter: none!important;
 }
+
+.flexRowContent--first-2-footer {
+  padding: 1rem;
+}

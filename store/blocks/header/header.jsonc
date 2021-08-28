@@ -52,9 +52,6 @@
   },
   "login": {
     "props": {
-<<<<<<< HEAD
-}
-=======
       "emailAndPasswordTitle": "LOG-IN",
       "accessCodeTitle": "Acess Code LOG-IN",
       "emailPlaceholder": "e-mail",
@@ -62,7 +59,6 @@
       "showPasswordVerificationIntoTooltip": true,
       "blockClass": "loginbutton"
     }
->>>>>>> 9ff774fb4d2c9772cb86a27adbe29e95423c8900
   },
   "flex-layout.row#3-desktop": {
     "props": {
