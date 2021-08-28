@@ -22,7 +22,7 @@
   color: #ffffff;
   font-size: 30px;
   margin-left: 60px;
-  word-break: break-word;
+  white-space: nowrap;
 }
 
 .infoCardSubhead{

@@ -33,7 +33,7 @@
             "imageUrl": "https://hiringcoders202102.vtexassets.com/assets/vtex.file-manager-graphql/images/25441344-d12f-427b-b994-396fd2426442___ab2b721811f3ae23ad2c8a5e9568b140.png",
             "headline": "Use gratuitamente o Amazon EC2, o S3",
             "subhead": " E muitos outros por ano",
-            "callToActionText": "Saiba mais sobre o nível gratuito da AWS  >>",
+            "callToActionText": "Saiba mais do nível gratuito  >>",
             "callToActionUrl": "#",
             "blockClass": "info-card-home",
             "textAlignment": "left"
@@ -62,7 +62,7 @@
             "headline": "Centro de recursos de conceitos básicos",
             "subhead": "Documentação técnica e outros recursos gratuitos para ajudar você a criar com a AWS",
             "callToActionText": "Conceitos básicos  >>",
-            "callToActionUrl": "/sale/d",
+            "callToActionUrl": "#",
             "blockClass": "info-card-home",
             "textAlignment": "left"
         }
@@ -76,7 +76,7 @@
             "headline": "Revolucione seu negócio",
             "subhead": "Líderes eficazes confiam em dados para tomar decisões informadas e executar ações significativa. Eles constroem uma estratégia moderna de dados.",
             "callToActionText": "Saiba mais  >>",
-            "callToActionUrl": "/sale/d",
+            "callToActionUrl": "#",
             "blockClass": "info-card-home",
             "textAlignment": "left"
         }
@@ -90,7 +90,7 @@
             "headline": "Trabalho e ensino remotos",
             "subhead": "Ofereça suporte para funcionários, estudantes e agentes de centrais de atendimento",
             "callToActionText": "Saiba mais  >>",
-            "callToActionUrl": "/sale/d",
+            "callToActionUrl": "#",
             "blockClass": "info-card-home",
             "textAlignment": "left"
         }
