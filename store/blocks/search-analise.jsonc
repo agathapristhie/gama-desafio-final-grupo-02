@@ -11,8 +11,8 @@
   }, */
   "image#landingbanner": {
     "props": {
-      "minWidth": "50%",
-      "src": "assets/banner2.jpeg"
+      "minWidth": "100%",
+      "src": "assets/bannerfinal.jpeg"
     }
   },
   "search-result-layout.customQuery#pesquisa1analises": {
