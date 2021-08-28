@@ -1,0 +1,20 @@
+{
+  "vendor": "hiringcoders202102",
+  "name": "desafiofinalgrupo02",
+  "version": "1.0.1",
+  "title": "DESAFIO FINAL - GRUPO 02 - AWS",
+  "description": "DESAFIO FINAL PARA A GAMA ACADEMY",
+  "builders": {
+    "store": "0.x",
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x"
+  },
+  "dependencies": {},
+  "registries": [
+    "smartcheckout",
+    "vtex.styleguide: 9.x"
+  ],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
