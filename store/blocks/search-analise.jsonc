@@ -1,0 +1,263 @@
+{
+  "store.custom#pesquisateste": {
+    "blocks": [
+      "image#landingbanner",
+      "search-result-layout.customQuery#pesquisa1analises"
+    ]
+  },
+  "image#landingbanner": {
+    "props": {
+      "minWidth": "100%",
+      "src": "assets/bannerawsproducts.png"
+    }
+  },
+  "search-result-layout.customQuery#pesquisa1analises": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
+        "maxItemsPerPage": 100,
+        "queryField": "analise",
+        "mapField": "ft",
+        "skusFilter": "ALL"
+
+      }
+
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop": {
+    "children": [
+      "breadcrumb.search",
+      "search-title.v2",
+      "flex-layout.row#top",
+      "search-fetch-previous",
+      "flex-layout.row#results",
+      "search-fetch-more"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#top": {
+    "children": [
+      "total-products.v2",
+      "order-by.v2"
+    ]
+  },
+  "flex-layout.row#results": {
+    "children": [
+      "flex-layout.col#filter",
+      "flex-layout.col#search"
+    ]
+  },
+  "flex-layout.col#filter": {
+    "props": {
+      "width": "20%"
+    },
+    "children": [
+      "filter-navigator.v3"
+    ]
+  },
+  "flex-layout.col#search": {
+    "children": [
+      "search-content"
+    ]
+  },
+  "search-content": {
+    "blocks": ["gallery", "not-found"]
+  },
+  "gallery": {
+    "blocks": ["product-summary.shelf"]
+  },
+
+
+
+  "search-result-layout": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  }
+
+
+
+//////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* TERMINA AQUI - A PÁGINA DE PESQUISA */
+
+
+///////////////////////////////////////////////////
+/////////////////////////////////////////////////
+///////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+
+  /* "store.custom#financeiro": {
+    "blocks": [
+      "image#financeiro",
+      "search-result-layout.customQuery#financeiro"
+    ]
+  },
+  "image#financeiro": {
+    "props": {
+      "minWidth": "100%",
+      "src": "assets/bannerawsproducts.png"
+    }
+  },
+  "search-result-layout.customQuery#financeiro": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
+        "maxItemsPerPage": 100,
+        "queryField": "financeiro",
+        "mapField": "ft",
+        "skusFilter": "ALL"
+
+      }
+
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+
+  "flex-layout.row#top1": {
+    "children": [
+      "total-products.v2",
+      "order-by.v2"
+    ]
+  },
+  "flex-layout.row#results1": {
+    "children": [
+      "flex-layout.col#filter",
+      "flex-layout.col#search"
+    ]
+  },
+  "flex-layout.col#filter1": {
+    "props": {
+      "width": "20%"
+    },
+    "children": [
+      "filter-navigator.v3"
+    ]
+  },
+  "flex-layout.col#search1": {
+    "children": [
+      "search-content#financeiro"
+    ]
+  },
+  "search-content#financeiro": {
+    "blocks": ["gallery", "not-found"]
+  },
+  "gallery#financeiro": {
+    "blocks": ["product-summary.shelf"]
+  },
+
+
+
+  "search-result-layout#financeiro": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+ */
+//////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* TERMINA AQUI FINANCEIRO - A PÁGINA DE PESQUISA */
+
+
+///////////////////////////////////////////////////
+/////////////////////////////////////////////////
+///////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+
+ /*  "store.custom#computacao": {
+    "blocks": [
+      "image#computacao",
+      "search-result-layout.customQuery#computacao"
+    ]
+  },
+  "image#computacao": {
+    "props": {
+      "minWidth": "100%",
+      "src": "assets/bannerawsproducts.png"
+    },
+    "search-result-layout.customQuery#computacao": {
+      "props": {
+        "querySchema": {
+          "orderByField": "OrderByReleaseDateDESC",
+          "hideUnavailableItems": false,
+          "maxItemsPerPage": 100,
+          "queryField": "computacao",
+          "mapField": "ft",
+          "skusFilter": "ALL"
+
+        }
+
+      },
+      "blocks": [
+        "search-result-layout.desktop",
+        "search-result-layout.mobile",
+        "search-not-found-layout"
+      ]
+    },
+
+    "flex-layout.row#top2": {
+      "children": [
+        "total-products.v2",
+        "order-by.v2"
+      ]
+    },
+    "flex-layout.row#results2": {
+      "children": [
+        "flex-layout.col#filter2",
+        "flex-layout.col#search2"
+      ]
+    },
+    "flex-layout.col#filter2": {
+      "props": {
+        "width": "20%"
+      },
+      "children": [
+        "filter-navigator.v3"
+      ]
+    },
+    "flex-layout.col#search2": {
+      "children": [
+        "search-content#financeiro"
+      ]
+    },
+    "search-content#computacao": {
+      "blocks": ["gallery", "not-found"]
+    },
+    "gallery#computacao": {
+      "blocks": ["product-summary.shelf"]
+    },
+    "search-result-layout#computacao": {
+      "blocks": [
+        "search-result-layout.desktop",
+        "search-result-layout.mobile",
+        "search-not-found-layout"
+      ]
+    }
+  } */
+}

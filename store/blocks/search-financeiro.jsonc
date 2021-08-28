@@ -1,0 +1,75 @@
+{
+  "store.custom#financeiro": {
+    "blocks": [
+      "image#financeiro",
+      "search-result-layout.customQuery#financeiro"
+    ]
+  },
+  "image#financeiro": {
+    "props": {
+      "minWidth": "100%",
+      "src": "assets/bannerawsproducts.png"
+    }
+  },
+  "search-result-layout.customQuery#financeiro": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
+        "maxItemsPerPage": 100,
+        "queryField": "financeiro",
+        "mapField": "ft",
+        "skusFilter": "ALL"
+
+      }
+
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+
+  "flex-layout.row#top1": {
+    "children": [
+      "total-products.v2",
+      "order-by.v2"
+    ]
+  },
+  "flex-layout.row#results1": {
+    "children": [
+      "flex-layout.col#filterfinanceiro",
+      "flex-layout.col#searchfinanceiro"
+    ]
+  },
+  "flex-layout.col#filterfinanceiro": {
+    "props": {
+      "width": "20%"
+    },
+    "children": [
+      "filter-navigator.v3"
+    ]
+  },
+  "flex-layout.col#searchfinanceiro": {
+    "children": [
+      "search-content#financeiro"
+    ]
+  },
+  "search-content#financeiro": {
+    "blocks": ["gallery#financeiro", "not-found"]
+  },
+  "gallery#financeiro": {
+    "blocks": ["product-summary.shelf"]
+  },
+
+
+
+  "search-result-layout#financeiro": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  }
+}
