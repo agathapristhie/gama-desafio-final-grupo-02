@@ -1,14 +1,15 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
+      "slider-layout#aws-home",
+      //"list-context.image-list#home",
       /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+       * For example, `flex-layout.row#cards` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
+      "flex-layout.row#cards",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
-      "info-card#home",
+      //"info-card#home",
       "rich-text#question",
       "rich-text#link",
       "newsletter"
@@ -52,11 +53,17 @@
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": [
+      "list-context.product-list#home"
+    ]
   },
-  "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+  "list-context.product-list#home": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
     }
@@ -73,7 +80,6 @@
       "blockClass": "shelf"
     }
   },
-
   "info-card#home": {
     "props": {
       "id": "info-card-home",
@@ -87,14 +93,12 @@
       "textAlignment": "center"
     }
   },
-
   "rich-text#question": {
     "props": {
       "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
       "blockClass": "question"
     }
   },
-
   "rich-text#link": {
     "props": {
       "text": "\n**Reach us at**\nwww.vtex.com.br",

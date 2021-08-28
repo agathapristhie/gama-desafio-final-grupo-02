@@ -40,11 +40,11 @@
   color: #F19927;
 }
 .flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
-  color: #727273;
+  color: #fff;
   font-size: 14px;
 }
 .flexRow--deals {
-  background-color: #a7afbd;
+  background-color: #ffffff;
   padding: 14px 0px;
 }
 
@@ -54,6 +54,12 @@
 
 .flexRow--deals .flexCol {
   align-items: center;
+}
+/*style borda card*/
+.flexCol{
+  margin: 10px;
+  padding-top: 15px;
+  border-color: #D5DBDB;
 }
 
 .flexCol--filterCol {
@@ -108,3 +114,4 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
