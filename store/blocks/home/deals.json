@@ -1,86 +1,101 @@
 {
-  "flex-layout.row#deals": {
+  "flex-layout.row#cards": {
     "children": [
-      "flex-layout.col#deals1",
-      "flex-layout.col#deals2",
-      "flex-layout.col#deals3",
-      "flex-layout.col#deals4"
+      "flex-layout.col#card1",
+      "flex-layout.col#card2",
+      "flex-layout.col#card3",
+      "flex-layout.col#card4"
     ],
     "props": {
-      "blockClass": "deals"
+      "blockClass": "cards"
     }
   },
-
-  "flex-layout.col#deals1": {
+  "flex-layout.col#card1": {
+    "props": {
+      "border": "all",
+      "bodercolor": "gray"
+    },
     "children": [
-      "image#deal1",
-      "rich-text#deal1"
+      "image#card1",
+      "rich-text#card1"
     ]
   },
-  "image#deal1": {
+  "image#card1": {
     "props": {
       "src": "https://hiringcoders202102.vtexassets.com/assets/vtex.file-manager-graphql/images/10a01377-5362-4b70-9f9f-2e5783906489___236ba39082ee3893ae3835dad91f4749.png",
       "maxHeight": "135px"
     }
   },
-  "rich-text#deal1": {
+  "rich-text#card1": {
     "props": {
       "text": "Nível gratuito estendido do Amazon Lightsail",
-      "blockClass": "deals"
+      "blockClass": "cards"
     }
   },
-  "flex-layout.col#deals2": {
+  "flex-layout.col#card2": {
+    "props": {
+      "border": "all",
+      "bodercolor": "gray"
+    },
     "children": [
-      "image#deal2",
-      "rich-text#deal2"
+      "image#card2",
+      "rich-text#card2"
     ]
   },
-  "image#deal2": {
+  "image#card2": {
     "props": {
       "src": "https://hiringcoders202102.vtexassets.com/assets/vtex.file-manager-graphql/images/1374f6c4-f9cf-4798-b735-29c939107f85___7ae1c308416fd7b7ae9a0f5dce997156.png",
       "maxHeight": "135px"
     }
   },
-  "rich-text#deal2": {
+  "rich-text#card2": {
     "props": {
       "text": "Evento virtual AWS Store Day",
-      "blockClass": "deals"
+      "blockClass": "cards"
     }
   },
-  "flex-layout.col#deals3": {
+  "flex-layout.col#card3": {
+    "props": {
+      "border": "all",
+      "bodercolor": "gray"
+    },
     "children": [
-      "image#deal3",
-      "rich-text#deal3"
+      "image#card3",
+      "rich-text#card3"
     ]
   },
-  "image#deal3": {
+  "image#card3": {
     "props": {
       "src": "https://hiringcoders202102.vtexassets.com/assets/vtex.file-manager-graphql/images/911cbfcc-3f8c-4051-97a4-6c2ce0f62674___6482fca2cd9e91847671335bf7606cc1.png",
       "maxHeight": "135px"
     }
   },
-  "rich-text#deal3": {
+  "rich-text#card3": {
     "props": {
       "text": "Amazon Elasticsearch Service com suporte para armazenamento inativo",
-      "blockClass": "deals"
+      "blockClass": "cards"
     }
   },
-  "flex-layout.col#deals4": {
+  "flex-layout.col#card4": {
+    "props": {
+      "border": "all",
+      "bodercolor": "gray" 
+    },
     "children": [
-      "image#deal4",
-      "rich-text#deal4"
+      "image#card4",
+      "rich-text#card4"
     ]
   },
-  "image#deal4": {
+  "image#card4": {
     "props": {
       "src": "https://hiringcoders202102.vtexassets.com/assets/vtex.file-manager-graphql/images/90a01d1c-3ae0-4772-9917-1856eb2b52c8___41d0a13d0970a7934472517ecc0735fd.png",
       "maxHeight": "135px"
     }
   },
-  "rich-text#deal4": {
+  "rich-text#card4": {
     "props": {
       "text": "Instâncias do EC2 com a tecnologia AMD",
-      "blockClass": "deals"
+      "blockClass": "cards"
     }
   }
 }

@@ -4,9 +4,9 @@
       "slider-layout#aws-home",
       //"list-context.image-list#home",
       /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+       * For example, `flex-layout.row#cards` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
+      "flex-layout.row#cards",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       //"info-card#home",
