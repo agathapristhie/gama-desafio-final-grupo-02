@@ -2,16 +2,33 @@
   justify-content: center;
 }
 .sliderLayoutContainer--carousel {
-  background-color: #F0F0F0;
+  background-color: #243141;
 }
 
 .sliderTrackContainer {
-  max-width: 1520px;
+  max-width: 1350px;
 }
 
 .paginationDotsContainer {
   margin-top: .5rem;
   margin-bottom: .5rem;
+}
+
+/*.paginationDot--carousel{
+  background-color: #68727d;
+}*/
+
+/*bolinhas do slider*/
+.paginationDot--carousel:hover{
+  background-color: #fff;
+}
+/* arrows dos slider*/
+.caretIcon--carousel{
+  color: #fff;
+}
+
+.caretIcon--carousel:hover{
+  color: #8F9B9F;
 }
 
 .layoutContainer--shelf {
