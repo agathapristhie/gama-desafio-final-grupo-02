@@ -34,11 +34,14 @@
     "sticky": true
   }
 },
-  "search-bar": {
+/*   "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
     "props": {
+      "openAutocompleteOnFocus": true,
+      "productLayout": "horizontal",
       "maxWidth": 250
     }
-  },
+  }, */
   "login": {
     "props": {
       "emailAndPasswordTitle": "LOG-IN",
