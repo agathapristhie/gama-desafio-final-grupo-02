@@ -1,0 +1,76 @@
+{
+
+  "store.custom#computacao": {
+    "blocks": [
+      "image#computacao",
+      "search-result-layout.customQuery#computacao"
+    ]
+  },
+  "image#computacao": {
+    "props": {
+      "minWidth": "100%",
+      "src": "assets/bannerfinal.jpeg"
+    }
+  },
+  "search-result-layout.customQuery#computacao": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": false,
+        "maxItemsPerPage": 100,
+        "queryField": "computacao",
+        "mapField": "ft",
+        "skusFilter": "ALL"
+
+      }
+
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+
+  "flex-layout.row#top2": {
+    "children": [
+      "total-products.v2",
+      "order-by.v2"
+    ]
+  },
+  "flex-layout.row#results2": {
+    "children": [
+      "flex-layout.col#filter2",
+      "flex-layout.col#search2"
+    ]
+  },
+  "flex-layout.col#filter2": {
+    "props": {
+      "width": "20%"
+    },
+    "children": [
+      "filter-navigator.v3"
+    ]
+  },
+  "flex-layout.col#search2": {
+    "children": [
+      "search-content#computacao"
+    ]
+  },
+  "search-content#computacao": {
+    "blocks": ["gallery#computacao", "not-found"]
+  },
+  "gallery#computacao": {
+    "blocks": ["product-summary.shelf"]
+  },
+
+
+
+  "search-result-layout#computaco": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  }
+}

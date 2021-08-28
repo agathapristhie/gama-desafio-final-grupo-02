@@ -15,7 +15,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/analises",
         "noFollow": false,
         "tagTitle": "Análises",
         "text": "Análises"
@@ -30,7 +30,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/financeiro",
         "noFollow": false,
         "tagTitle": "Gerenciamento Nuvem",
         "text": "Gerenciamento Financeiro de Nuvem"
@@ -45,7 +45,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/computacao",
         "noFollow": false,
         "tagTitle": "Computação",
         "text": "Computação"

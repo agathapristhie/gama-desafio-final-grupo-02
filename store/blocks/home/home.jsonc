@@ -1709,8 +1709,8 @@
       "textPosition": "left",
       "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
       "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
+      "callToActionText": "BRAND",
+      "callToActionUrl": "/brand",
       "blockClass": "info-card-home",
       "textAlignment": "center"
     }
