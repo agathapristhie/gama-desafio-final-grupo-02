@@ -1,0 +1,12 @@
+{
+  "memory": 256,
+  "timeout": 2,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "routes": {
+    "analytics": {
+      "path": "/_v/app/analytics/realTime",
+      "public": true
+    }
+  }
+}
