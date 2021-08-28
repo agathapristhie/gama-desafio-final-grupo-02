@@ -1,57 +1,10 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#first",
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#fullpage"
     ]
   },
-
-
-//FIRST SLIDER-------------------------------------------------------------------------------
-  "list-context.image-list#first": {
-    "children": ["slider-layout#first"],
-    "props": {
-      "images": [
-        {
-          "image": "assets/carousel-background.png",
-          "mobileImage": "assets/carousel-background.png"
-        },
-        {
-          "image": "assets/carousel-background-2.png",
-          "mobileImage": "assets/carousel-background-2.png"
-        },
-        {
-          "image": "assets/carousel-background-3.jpg",
-          "mobileImage": "assets/carousel-background-3.jpg"
-        },
-        {
-          "image": "assets/carousel-background-4.png",
-          "mobileImage": "assets/carousel-background-4.png"
-        },
-        {
-          "image": "assets/carousel-background-4.png",
-          "mobileImage": "assets/carousel-background-4.png"
-        }
-      ]
-    }
-  },
-
-  "slider-layout#demo-images": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "usePaginationDots":true,
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
-    }
-  },
-//END OF FIRST SLIDER-------------------------------------------------------------------------------
-
 
 //FLEX LAYOUT ROW MAIN----------------------------------------------------------------------------
 "flex-layout.row#fullpage": {
