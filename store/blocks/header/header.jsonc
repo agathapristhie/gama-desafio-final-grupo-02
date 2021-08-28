@@ -18,36 +18,36 @@
     ]
   },
   "header-row#logo": {
-  "children": [
-    "image#logodesktop",
-    "header-spacer",
-    "search-bar",
-    "locale-switcher",
-    "login",
-    "minicart.v2"
-  ],
-  "props": {
-    "fullWidth": true,
-    "sticky": true
-  }
-},
-"header-row#menu": {
-  "children": [
-    "vtex.menu@2.x:menu#websites"
-  ],
-  "props": {
-    "fullWidth": true,
-    "sticky": true
-  }
-},
-/*   "search-bar": {
-    "blocks": ["autocomplete-result-list.v2"],
+    "children": [
+      "logo#desktop",
+      "header-spacer",
+      //"search-bar",
+      "locale-switcher",
+      "login",
+      "minicart.v2"
+    ],
     "props": {
-      "openAutocompleteOnFocus": true,
-      "productLayout": "horizontal",
-      "maxWidth": 250
+      "fullWidth": true,
+      "sticky": true
     }
-  }, */
+  },
+  "header-row#menu": {
+    "children": [
+      "vtex.menu@2.x:menu#websites",
+      "header-spacer",
+      "search-bar"
+    ],
+    "props": {
+      "fullWidth": true,
+      "sticky": true
+    }
+  },
+  "search-bar": {
+    "props": {
+      //"maxWidth": 100,
+      "containerMode": "overlay"
+    }
+  },
   "login": {
     "props": {
       "emailAndPasswordTitle": "LOG-IN",
