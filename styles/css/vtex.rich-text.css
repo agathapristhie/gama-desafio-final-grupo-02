@@ -67,6 +67,12 @@
   font-weight: 700;
 }
 
+.container--footer{
+  background: #EAEDED;
+  color: #28395C;
+  width: 100%;
+}
+
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;
@@ -86,5 +92,37 @@
 
   .container--title .paragraph {
     line-height: 1.3em;
+    text-align: start;
   }
+}
+
+  .paragraph--footer-1, .heading--footer-1 {
+    color:#fff;
+  }
+
+
+  .container--footer {
+    background-color: #EAEDED;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .paragraph--footer {
+    color:#242F3E;
+  }
+
+.container--r2-1{
+  text-align: center;
+}
+
+.container--r5-1, .container--r11-1 {
+  color:#fff;
+}
+
+.container--r5-2-1-2 {
+  color:#fff;
+}
+
+.container--r5-2-1-2:hover {
+  color:#FF9D00;
 }

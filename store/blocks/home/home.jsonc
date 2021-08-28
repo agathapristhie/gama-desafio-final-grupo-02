@@ -1,58 +1,1731 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "list-context.image-list#first",
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "flex-layout.row#fullpage"
     ]
   },
 
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+
+//FIRST SLIDER-------------------------------------------------------------------------------
+  "list-context.image-list#first": {
+    "children": ["slider-layout#first"],
     "props": {
-      "height": 720,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "assets/carousel-background.png",
+          "mobileImage": "assets/carousel-background.png"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "assets/carousel-background-2.png",
+          "mobileImage": "assets/carousel-background-2.png"
+        },
+        {
+          "image": "assets/carousel-background-3.jpg",
+          "mobileImage": "assets/carousel-background-3.jpg"
+        },
+        {
+          "image": "assets/carousel-background-4.png",
+          "mobileImage": "assets/carousel-background-4.png"
+        },
+        {
+          "image": "assets/carousel-background-4.png",
+          "mobileImage": "assets/carousel-background-4.png"
         }
       ]
     }
   },
-  "slider-layout#demo-images": {
+
+  "slider-layout#first": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,
         "phone": 1
       },
+      "usePaginationDots":true,
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
       "blockClass": "carousel"
     }
   },
+//END OF FIRST SLIDER-------------------------------------------------------------------------------
 
-  "rich-text#shelf-title": {
-    "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
-    }
+
+//FLEX LAYOUT ROW MAIN----------------------------------------------------------------------------
+"flex-layout.row#fullpage": {
+  "children": ["flex-layout.col#fullpage"],
+  "props": {
+    "blockClass": "teste",
+    "fullWidth": true
+  }
+},
+
+"flex-layout.col#fullpage": {
+  "children": ["slider-layout#fullpage"]
+},
+
+"slider-layout#fullpage": {
+  "props": {
+    "infinite": false,
+    "showPaginationDots": "always"
   },
-  "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+  "children": [
+    "flex-layout.col#inside"
+  ]
   },
+  //END OF FLEX LAYOUT ROW MAIN----------------------------------------------------------------------------
+
+
+
+  //FLEX LAYOUT COL CHILDREN----------------------------------------------------------------------------
+  "flex-layout.col#inside": {
+  "props":{
+  },
+  "children": [
+    "flex-layout.row#inside1",
+    "flex-layout.row#inside2",
+    "flex-layout.row#inside3",
+    "flex-layout.row#inside4",
+    "flex-layout.row#inside5",
+    "flex-layout.row#inside6",
+    "flex-layout.row#inside7",
+    "flex-layout.row#inside8",
+    "flex-layout.row#inside9",
+    "flex-layout.row#inside11",
+    "flex-layout.row#inside10",
+    "flex-layout.row#inside12"
+  ]
+},
+//END OF FLEX LAYOUT COL CHILDREN----------------------------------------------------------------------------
+
+
+
+//FLEX LAYOUT ROW-1-CHILDREN----------------------------------------------------------------------------
+"flex-layout.row#inside1":{
+  "children":["flex-layout.col#inside1helper"]
+},
+
+"flex-layout.col#inside1helper": {
+  "children": [
+    "flex-layout.row#inside1helper"
+  ],
+  "props": {
+    "marginLeft":9,
+    "marginRight":9
+  }
+},
+
+"flex-layout.row#inside1helper": {
+  "children":["flex-layout.col#r1c1", "flex-layout.col#r1c2", "flex-layout.col#r1c3", "flex-layout.col#r1c4"],
+  "props": {
+    "blockClass":"inside1",
+    "colGap": "2",
+    "colSizing": "equal",
+    "marginTop": "6",
+    "marginBottom": "6",
+    "paddingLeft": "15",
+    "paddingRight": "15"
+  }
+},
+
+
+"flex-layout.col#r1c1": {
+  "children":
+  [
+    "image#r1c1",
+    "rich-text#r1c1"
+  ],
+  "props": {
+    "blockClass": "info-card-example",
+    "textAlignment": "center",
+    "border": "all",
+    "borderColor": "light-gray",
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+"image#r1c1":{
+  "props":{
+    "src":"assets/Site-Merch_Free-Tier_Editorial.e425a53f7aab73431cacb1c52afc5fa0568fe969.png"
+  }
+},
+
+"rich-text#r1c1": {
+  "props": {
+    "text": "**Comece a usar gratuitamente**\nUse gratuitamente o Amazon EC2, o S3 e muitos outros produtos e serviços por um ano"
+  }
+},
+
+"flex-layout.col#r1c2": {
+  "children":
+  [
+    "image#r1c2",
+    "rich-text#r1c2"
+  ],
+  "props": {
+  "blockClass": "info-card-example",
+  "textAlignment": "center",
+  "border": "all",
+  "borderColor": "light-gray",
+  "marginLeft": "3",
+  "marginRight": "3"
+  }
+},
+
+"image#r1c2":{
+  "props":{
+    "src":"assets/Site-Merch_Getting-Started_Editorial.af832c5ef4feca15881f99b9d99c007163bfe6ad.png"
+  }
+},
+
+"rich-text#r1c2": {
+  "props": {
+    "text": "**Lance a sua primeira aplicação em questão de minutos**\nAprenda os fundamentos da AWS e comece a criar com breves tutoriais passo a passo"
+  }
+},
+
+"flex-layout.col#r1c3": {
+  "children":
+  [
+    "image#r1c3",
+    "rich-text#r1c3"
+  ],
+  "props": {
+  "blockClass": "info-card-example",
+  "textAlignment": "center",
+  "border": "all",
+  "borderColor": "light-gray",
+  "marginLeft": "3",
+  "marginRight": "3"
+  }
+},
+"image#r1c3":{
+  "props":{
+    "src":"assets/Site-Merch_EDM_Chime_Editorial.75e272a10cdc09161b59301eeb8c613cd128c5ad.png"
+  }
+},
+
+"rich-text#r1c3": {
+  "props": {
+    "text": "**Viabilize o trabalho remoto e o ensino a distância**\nOfereça suporte remoto para funcionários, estudantes e agentes centrais de contato"
+  }
+},
+
+"flex-layout.col#r1c4": {
+  "children":
+  [
+    "image#r1c4",
+    "rich-text#r1c4"
+  ],
+  "props": {
+  "blockClass": "info-card-example",
+  "textAlignment": "center",
+  "border": "all",
+  "borderColor": "light-gray",
+  "marginLeft": "3",
+  "marginRight": "3"
+  }
+},
+"image#r1c4":{
+  "props":{
+    "src":"assets/Site-Merch_Lightsail_Editorial.f3b6112b81a2512198937a63bc1d23381df43bcb.png"
+  }
+},
+"rich-text#r1c4": {
+  "props": {
+    "text": "**Amazon Lightsail**\nTudo o que você precisa para começar a usar a AWS a um preço baixo e sem surpresas"
+  }
+},
+//FLEX LAYOUT ROW-1-CHILDREN----------------------------------------------------------------------------
+
+//FLEX LAYOUT ROW-2-CHILDREN----------------------------------------------------------------------------
+"flex-layout.row#inside2":{
+  "children":["flex-layout.col#inside2helper"],
+  "props":{
+    "blockClass": "row2"
+  }
+},
+
+"flex-layout.col#inside2helper": {
+  "children": [
+    "flex-layout.row#inside2helper-text1",
+    "flex-layout.row#inside2helper-text2",
+    "flex-layout.row#inside2helper",
+    "flex-layout.row#inside2helper-text3"
+  ],
+  "props": {
+    "marginLeft":9,
+    "marginRight":9
+  }
+},
+
+"flex-layout.row#inside2helper-text1":{
+  "children": [
+    "rich-text#r2-1"
+  ]
+},
+"flex-layout.row#inside2helper-text2":{
+  "children": [
+    "rich-text#r2-2"
+  ]
+},
+"flex-layout.row#inside2helper-text3":{
+  "children": [
+    "rich-text#r2-3"
+  ],
+  "props": {
+    "marginBottom": "6px"
+  }
+},
+
+
+"flex-layout.row#inside2helper": {
+  "children":["flex-layout.col#r2c1", "flex-layout.col#r2c2", "flex-layout.col#r2c3", "flex-layout.col#r2c4"],
+  "props": {
+    "colGap": "2",
+    "colSizing": "equal",
+    "marginTop": "0",
+    "marginBottom": "0",
+    "paddingLeft": "15",
+    "paddingRight": "15"
+  }
+},
+
+"rich-text#r2-1": {
+  "props": {
+    "blockClass": "r2-1",
+    "text": "## Confira as soluções",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+
+"rich-text#r2-2": {
+  "props": {
+    "text": "**Por setor**"
+  }
+},
+
+"rich-text#r2-3": {
+  "props": {
+    "text": "Exibir todos os setores »",
+    "textPosition": "RIGHT"
+  }
+},
+
+"flex-layout.col#r2c1": {
+  "children":
+  [
+    "image#r2c1",
+    "rich-text#r2c1-1",
+    "rich-text#r2c1-2",
+    "rich-text#r2c1-3"
+  ],
+  "props": {
+    "blockClass": "cards-row-2",
+    "border": "top",
+    "borderColor": "#232F3E",
+    "borderWidth":2,
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r2c1":{
+  "props":{
+    "src":"assets/AWS-Category-Icon_Digital-Marketing_60_Left-Aligned.733668289a14bfe14da4cc4a40e6e75b988cdf38.png"
+  }
+},
+
+"rich-text#r2c1-1": {
+  "props": {
+    "text": "**Publicidade e marketing**"
+  }
+},
+"rich-text#r2c1-2": {
+  "props": {
+    "text": "Obtenha economia para análises em escala de petabyte e cargas de trabalho de latência de um dígito em milissegundos."
+  }
+},
+"rich-text#r2c1-3": {
+  "props": {
+    "text": "Saiba mais »"
+  }
+},
+
+"flex-layout.col#r2c2": {
+  "children":
+  [
+    "image#r2c2",
+    "rich-text#r2c2-1",
+    "rich-text#r2c2-2",
+    "rich-text#r2c2-3"
+  ],
+  "props": {
+    "blockClass": "cards-row-2",
+    "border": "top",
+    "borderColor": "#232f3e",
+    "borderWidth":2,
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r2c2":{
+  "props":{
+    "src":"assets/AWS-Category-Icon_Financial-Services_60_Left-Aligned.9c8e4cbab3340d81805a782f82bf2abca653267e.png"
+  }
+},
+
+"rich-text#r2c2-1": {
+  "props": {
+    "text": "**Serviços financeiros**"
+  }
+},
+"rich-text#r2c2-2": {
+  "props": {
+    "text": "Baixo custo. Alta resiliência. Explore as soluções da AWS em serviços bancários, pagamentos, mercados de capital e seguros."
+  }
+},
+"rich-text#r2c2-3": {
+  "props": {
+    "text": "Saiba mais »"
+  }
+},
+
+"flex-layout.col#r2c3": {
+  "children":
+  [
+    "image#r2c3",
+    "rich-text#r2c3-1",
+    "rich-text#r2c3-2",
+    "rich-text#r2c3-3"
+  ],
+  "props": {
+    "blockClass": "cards-row-2",
+    "border": "top",
+    "borderColor": "#232f3e",
+    "borderWidth":2,
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r2c3":{
+  "props":{
+    "src":"assets/AWS-Category-Icon_Gaming_60_Left-Aligned.a820ca892b9999c99011e57e176c02f847a06bb7.png"
+  }
+},
+
+
+"rich-text#r2c3-1": {
+  "props": {
+    "text": "**Tecnologia de jogos**"
+  }
+},
+"rich-text#r2c3-2": {
+  "props": {
+    "text": "Crie jogos computacionalmente simples em todos os gêneros e plataformas."
+  }
+},
+"rich-text#r2c3-3": {
+  "props": {
+    "text": "Saiba mais »"
+  }
+},
+
+"flex-layout.col#r2c4": {
+  "children":
+  [
+    "image#r2c4",
+    "rich-text#r2c4-1",
+    "rich-text#r2c4-2",
+    "rich-text#r2c4-3"
+  ],
+  "props": {
+    "blockClass": "cards-row-2",
+    "border": "top",
+    "borderColor": "#232f3e",
+    "borderWidth":2,
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r2c4":{
+  "props":{
+    "src":"assets/AWS-Category-Icon_Media-&-Entertainment_60_Left-Aligned.8e23c737ada1bce56454bcdc5201b7abc76e4b9b.png"
+  }
+},
+"rich-text#r2c4": {
+  "props": {
+    "text": "**Amazon Lightsail**\nTudo o que você precisa para começar a usar a AWS a um preço baixo e sem surpresas"
+  }
+},
+
+
+"rich-text#r2c4-1": {
+  "props": {
+    "text": "**Mídia e entretenimento**"
+  }
+},
+"rich-text#r2c4-2": {
+  "props": {
+    "text": "Da criação à distribuição de conteúdo, soluções de mídia criadas especificamente para que sua empresa mude com mais inteligência e eficiência."
+  }
+},
+"rich-text#r2c4-3": {
+  "props": {
+    "text": "Saiba mais »"
+  }
+},
+//END OF FLEX LAYOUT ROW-2-CHILDREN----------------------------------------------------------------------------
+
+
+
+//FLEX LAYOUT ROW-3-CHILDREN----------------------------------------------------------------------------
+"flex-layout.row#inside3":{
+  "children":["flex-layout.col#inside3helper"],
+  "props":{
+    "blockClass": "row3",
+    "paddingBottom": 15
+  }
+},
+
+"flex-layout.col#inside3helper": {
+  "children": [
+    "flex-layout.row#inside3helper-text2",
+    "flex-layout.row#inside3helper",
+    "flex-layout.row#inside3helper-text3"
+  ],
+  "props": {
+    "marginLeft":9,
+    "marginRight":9
+  }
+},
+
+"flex-layout.row#inside3helper-text1":{
+  "children": [
+    "rich-text#r3-1"
+  ]
+},
+"flex-layout.row#inside3helper-text2":{
+  "children": [
+    "rich-text#r3-2"
+  ]
+},
+"flex-layout.row#inside3helper-text3":{
+  "children": [
+    "rich-text#r3-3"
+  ],
+  "props": {
+    "marginBottom": "6px"
+  }
+},
+
+
+"flex-layout.row#inside3helper": {
+  "children":["flex-layout.col#r3c1", "flex-layout.col#r3c2", "flex-layout.col#r3c3", "flex-layout.col#r3c4"],
+  "props": {
+    "colGap": "2",
+    "colSizing": "equal",
+    "marginTop": "0",
+    "marginBottom": "0",
+    "paddingLeft": "15",
+    "paddingRight": "15"
+  }
+},
+
+"rich-text#r3-1": {
+  "props": {
+    "blockClass": "r3-1",
+    "text": "## Confira as soluções"
+  }
+},
+
+"rich-text#r3-2": {
+  "props": {
+    "text": "**Por categoria de tecnologia**"
+  }
+},
+
+"rich-text#r3-3": {
+  "props": {
+    "text": "Exibir todas as soluções »",
+    "textPosition": "RIGHT"
+  }
+},
+
+"flex-layout.col#r3c1": {
+  "children":
+  [
+    "image#r3c1",
+    "rich-text#r3c1-1",
+    "rich-text#r3c1-2",
+    "rich-text#r3c1-3"
+  ],
+  "props": {
+    "blockClass": "cards-row-3",
+    "border": "top",
+    "borderColor": "#232F3E",
+    "borderWidth":2,
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r3c1":{
+  "props":{
+    "src":"assets/60-analytics.27a6ebec1a9e415ef6cea6ec2c9f7761c8aa3ea6.png"
+  }
+},
+
+"rich-text#r3c1-1": {
+  "props": {
+    "text": "**Análise e data lakes**"
+  }
+},
+"rich-text#r3c1-2": {
+  "props": {
+    "text": "Armazene, categorize e analise todos os dados com segurança, em um único repositório centralizado.."
+  }
+},
+"rich-text#r3c1-3": {
+  "props": {
+    "text": "Saiba mais »"
+  }
+},
+
+"flex-layout.col#r3c2": {
+  "children":
+  [
+    "image#r3c2",
+    "rich-text#r3c2-1",
+    "rich-text#r3c2-2",
+    "rich-text#r3c2-3"
+  ],
+  "props": {
+    "blockClass": "cards-row-3",
+    "border": "top",
+    "borderColor": "#232f3e",
+    "borderWidth":2,
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r3c2":{
+  "props":{
+    "src":"assets/60-machine-learning.429b5b53e2d35f485ec2ab629aca861a4cd441b8.png"
+  }
+},
+
+"rich-text#r3c2-1": {
+  "props": {
+    "text": "**Machine learning**"
+  }
+},
+"rich-text#r3c2-2": {
+  "props": {
+    "text": "Crie usando serviços e plataformas potentes, assim como o mais amplo suporte a estruturas de trabalho de machine learning em qualquer lugar."
+  }
+},
+"rich-text#r3c2-3": {
+  "props": {
+    "text": "Saiba mais »"
+  }
+},
+
+"flex-layout.col#r3c3": {
+  "children":
+  [
+    "image#r3c3",
+    "rich-text#r3c3-1",
+    "rich-text#r3c3-2",
+    "rich-text#r3c3-3"
+  ],
+  "props": {
+    "blockClass": "cards-row-3",
+    "border": "top",
+    "borderColor": "#232f3e",
+    "borderWidth":2,
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r3c3":{
+  "props":{
+    "src":"assets/60-Serverless.8587fe451bdb0e99e73c48eb8531bc9aa8562e16.png"
+  }
+},
+
+
+"rich-text#r3c3-1": {
+  "props": {
+    "text": "**Computação sem servidor**"
+  }
+},
+"rich-text#r3c3-2": {
+  "props": {
+    "text": "Crie e execute aplicações e serviços sem se preocupar com servidores."
+  }
+},
+"rich-text#r3c3-3": {
+  "props": {
+    "text": "Saiba mais »"
+  }
+},
+
+"flex-layout.col#r3c4": {
+  "children":
+  [
+    "image#r3c4",
+    "rich-text#r3c4-1",
+    "rich-text#r3c4-2",
+    "rich-text#r3c4-3"
+  ],
+  "props": {
+    "blockClass": "cards-row-3",
+    "border": "top",
+    "borderColor": "#232f3e",
+    "borderWidth":2,
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r3c4":{
+  "props":{
+    "src":"assets/60-storage.2fae209fbce7aa8e4eee9b6bde7c64e2798fe1e3.png"
+  }
+},
+
+"rich-text#r3c4-1": {
+  "props": {
+    "text": "**Armazenamento**"
+  }
+},
+"rich-text#r3c4-2": {
+  "props": {
+    "text": "Opções resilientes e econômicas para backup, recuperação de desastres e arquivamento de dados em escala de petabytes."
+  }
+},
+"rich-text#r3c4-3": {
+  "props": {
+    "text": "Saiba mais »"
+  }
+},
+//END OF FLEX LAYOUT ROW-3-CHILDREN----------------------------------------------------------------------------
+
+
+//FLEX LAYOUT ROW-4-CHILDREN----------------------------------------------------------------------------
+"flex-layout.row#inside4":{
+  "children":["rich-text#question"],
+  "props": {
+    "blockClass":"inside4"
+  }
+},
+//FLEX LAYOUT ROW-4-CHILDREN----------------------------------------------------------------------------
+
+
+
+//FLEX LAYOUT ROW-5-CHILDREN----------------------------------------------------------------------------
+"flex-layout.row#inside5":{
+  "children":["flex-layout.col#inside5helper"],
+  "props":{
+    "blockClass": "inside5"
+  }
+},
+
+"flex-layout.col#inside5helper": {
+  "children": [
+    "flex-layout.row#inside5helper-text1",
+    "flex-layout.row#inside5helper-text2",
+    "flex-layout.row#inside5helper-text3",
+    "flex-layout.row#inside5helper"
+  ],
+  "props": {
+    "marginLeft":9,
+    "marginRight":9
+  }
+},
+
+"flex-layout.row#inside5helper-text1":{
+  "children": [
+    "rich-text#r5-1"
+  ]
+},
+
+"flex-layout.row#inside5helper-text2":{
+  "children": [
+"rich-text#r5-2-1",
+"rich-text#r5-2-2"
+  ]
+},
+
+
+"flex-layout.row#inside5helper-text3":{
+  "children": [
+    "rich-text#r5-3"
+  ]
+},
+
+
+"flex-layout.row#inside5helper": {
+  "children":[
+    "flex-layout.col#r5c1", "flex-layout.col#r5c2", "flex-layout.col#r5c3"
+  ],
+  "props": {
+    "colGap": "2",
+    "colSizing": "equal",
+    "marginTop": "0",
+    "marginBottom": "0",
+    "paddingLeft": "15",
+    "paddingRight": "15"
+  }
+},
+
+"rich-text#r5-1": {
+  "props": {
+    "blockClass": "r5-1",
+    "text": "## Treinamento e certificação",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+
+"rich-text#r5-2-1": {
+  "props": {
+    "blockClass": "r5-2-1-2",
+    "text": "**Para criadores**",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+
+"rich-text#r5-2-2": {
+  "props": {
+    "blockClass": "r5-2-1-2",
+    "text": "**Para os responsáveis pelas tomadas de decisões**",
+    "textAlignment": "CENTER",
+    "textPosition": "LEFT"
+  }
+},
+
+"rich-text#r5-3": {
+  "props": {
+    "blockClass": "r5-1",
+    "text": "**Para líderes técnicos e empresariais que desenvolvem habilidades em nuvem na sua organização para viabilizar inovação e transformação**",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+
+"flex-layout.col#r5c1": {
+  "children":
+  [
+    "image#r5c1",
+    "rich-text#r5c1-1",
+    "rich-text#r5c1-2",
+    "rich-text#r5c1-3"
+  ],
+  "props": {
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r5c1":{
+  "props":{
+    "src":"assets/illustration_digital_blue-inverse_275x135.0331d1deeb7079d2e286e51c34cdafabd4123373.png"
+  }
+},
+
+"rich-text#r5c1-1": {
+  "props": {
+    "blockClass": "r5-1",
+    "text": "**Aprimore suas equipes**",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+"rich-text#r5c1-2": {
+  "props": {
+    "blockClass": "r5-1",
+    "text": "Explore as práticas recomendadas para capacitar suas equipes com programas abrangentes de treinamento e certificação.",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+"rich-text#r5c1-3": {
+  "props": {
+    "blockClass": "r5-1",
+    "text": "Leia o e-book »",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+
+"flex-layout.col#r5c2": {
+  "children":
+  [
+    "image#r5c2",
+    "rich-text#r5c2-1",
+    "rich-text#r5c2-2",
+    "rich-text#r5c2-3"
+  ],
+  "props": {
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r5c2":{
+  "props":{
+    "src":"assets/Page_Illustrations_Training-Certification_AWS-Learning-Recommendations.25913ed46035b4e68edb797dc7ed1253ebd9c396.png"
+  }
+},
+
+"rich-text#r5c2-1": {
+  "props": {
+    "blockClass": "r5-1",
+    "text": "**Treinamento em sala de aula virtual**",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+"rich-text#r5c2-2": {
+  "props": {
+    "blockClass": "r5-1",
+    "text": "Acelere sua transformação da nuvem com o treinamento de especialistas da AWS familiarizados com seus casos de uso da AWS.",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+"rich-text#r5c2-3": {
+  "props": {
+    "blockClass": "r5-1",
+    "text": "Saiba mais »",
+    "textAlignment": "center",
+    "textPosition": "CENTER"
+  }
+},
+
+"flex-layout.col#r5c3": {
+  "children":
+  [
+    "image#r5c3",
+    "rich-text#r5c3-1",
+    "rich-text#r5c3-2",
+    "rich-text#r5c3-3"
+  ],
+  "props": {
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r5c3":{
+  "props":{
+    "src":"assets/illustration_cert_blue-inverse_275x135.9ea49aa1c87ef27319178d11f96e5f14632ee4fb.png"
+  }
+},
+
+
+"rich-text#r5c3-1": {
+  "props": {
+    "blockClass": "r5-1",
+    "text": "**Equipe certificada pela AWS**",
+    "textAlignment":"CENTER",
+    "textPosition":"CENTER"
+  }
+},
+"rich-text#r5c3-2": {
+  "props": {
+    "blockClass": "r5-1",
+    "text": "Saiba como o AWS Certification pode ajudar suas organizações a alcançar resultados comerciais.",
+    "textAlignment":"CENTER",
+    "textPosition":"CENTER"
+  }
+},
+"rich-text#r5c3-3": {
+  "props": {
+    "blockClass": "r5-1",
+    "text": "Faça download do whitepaper »",
+    "textAlignment":"CENTER",
+    "textPosition":"CENTER"
+
+  }
+},
+//END OF FLEX LAYOUT ROW-5-CHILDREN----------------------------------------------------------------------------
+
+//FLEX LAYOUT ROW-6-CHILDREN----------------------------------------------------------------------------
+"flex-layout.row#inside6":{
+  "children":["flex-layout.col#inside6helper"],
+  "props":{
+    "blockClass": "inside6"
+  }
+},
+
+"flex-layout.col#inside6helper": {
+  "children": [
+    "flex-layout.row#inside6helper-text1",
+    "flex-layout.row#inside6helper"
+  ],
+  "props": {
+    "marginLeft":9,
+    "marginRight":9
+  }
+},
+
+"flex-layout.row#inside6helper-text1":{
+  "children": [
+    "rich-text#r6-1"
+  ]
+},
+
+"flex-layout.row#inside6helper": {
+  "children":[
+    "flex-layout.col#r6c1", "flex-layout.col#r6c2"
+  ],
+  "props": {
+    "colGap": "2",
+    "colSizing": "equal",
+    "marginTop": "0",
+    "marginBottom": "0",
+    "paddingLeft": "16",
+    "paddingRight": "16"
+  }
+},
+
+"rich-text#r6-1": {
+  "props": {
+    "blockClass": "r6-1",
+    "text": "### Soluções de nuvem híbrida da AWS\nExperiência consistente em toda a AWS e nos ambientes on-premises",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+
+"flex-layout.col#r6c1": {
+  "children":
+  [
+    "image#r6c1",
+    "rich-text#r6c1-1",
+    "rich-text#r6c1-2",
+    "rich-text#r6c1-3"
+  ],
+  "props": {
+    "textAlignment": "center",
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r6c1":{
+  "props":{
+    "src":"assets/VMware-Cloud-on-AWS_Icon_64_Squid.b126bc9cff89e6c44c4f5b9775521edd6743c2b8.png"
+  }
+},
+
+"rich-text#r6c1-1": {
+  "props": {
+    "blockClass": "r6-1",
+    "text": "**VMware Cloud on AWS**",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+"rich-text#r6c1-2": {
+  "props": {
+    "blockClass": "r6-1",
+    "text": "Migre e amplie ambientes VMware para a Nuvem AWS.",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+"rich-text#r6c1-3": {
+  "props": {
+    "blockClass": "r6-1",
+    "text": "Saiba mais »",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+
+"flex-layout.col#r6c2": {
+  "children":
+  [
+    "image#r6c2",
+    "rich-text#r6c2-1",
+    "rich-text#r6c2-2",
+    "rich-text#r6c2-3"
+  ],
+  "props": {
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER",
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r6c2":{
+  "props":{
+    "src":"assets/AWS-Outposts_Icon_64_Squid.d199e5560c4c68bae18cb080acd81984ad1312f7.png"
+  }
+},
+
+"rich-text#r6c2-1": {
+  "props": {
+    "blockClass": "r6-1",
+    "text": "**AWS Outposts**",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+"rich-text#r6c2-2": {
+  "props": {
+    "blockClass": "r6-1",
+    "text": "Execute a infraestrutura da AWS on-premises para ter uma experiência híbrida verdadeiramente consistente",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+"rich-text#r6c2-3": {
+  "props": {
+    "blockClass": "r6-1",
+    "text": "Saiba mais »",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+//FLEX LAYOUT ROW-6-CHILDREN----------------------------------------------------------------------------
+
+
+//FLEX LAYOUT ROW-7-CHILDREN----------------------------------------------------------------------------
+"flex-layout.row#inside7":{
+  "children":["rich-text#question"],
+  "props": {
+    "blockClass":"inside7"
+  }
+},
+//FLEX LAYOUT ROW-7-CHILDREN----------------------------------------------------------------------------
+
+
+
+
+//FLEX LAYOUT ROW-8-CHILDREN----------------------------------------------------------------------------
+"flex-layout.row#inside8":{
+  "children":["rich-text#question"],
+  "props": {
+    "blockClass":"inside8"
+  }
+},
+//END FLEX LAYOUT ROW-8-CHILDREN----------------------------------------------------------------------------
+
+//FLEX LAYOUT ROW-9-CHILDREN----------------------------------------------------------------------------
+
+"flex-layout.row#inside9":{
+  "children":[
+    "flex-layout.col#inside9"
+  ],
+  "props": {
+  }
+},
+"flex-layout.col#inside9":{
+  "children":[
+    "flex-layout.row#inside9text",
+    "flex-layout.row#r9-1",
+    "flex-layout.row#r9-2",
+    "flex-layout.row#r9-3"
+  ],
+  "props": {
+    "blockClass":"inside9",
+    "marginLeft":9,
+    "marginRight":9
+  }
+},
+
+"flex-layout.row#inside9text": {
+  "children":
+  [
+    "rich-text#inside9"
+  ]
+},
+
+"rich-text#inside9": {
+  "props": {
+    "blockClass": "r9-1",
+    "text": "## Saiba como os clientes criam usando a AWS",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+
+ "flex-layout.row#r9-1": {
+ "children": [
+  "image#r9-1-1",
+  "image#r9-1-2",
+  "image#r9-1-3",
+  "image#r9-1-4"
+  ],
+  "props":{
+  }
+ },
+
+ "image#r9-1-1": {
+   "props":{
+     "src":"assets/logo_bp.8fa26480c12139b66816d811d1ba1b9798b0cd4b.svg",
+     "blockClass":"filter-logos"
+  }
+},
+
+ "image#r9-1-2": {
+   "props":{
+     "src":"assets/Cerner-Corporation-logo.36bc94e5448a9425e9666078721d02d5a1905a64.svg",
+     "blockClass":"filter-logos"
+  }
+},
+ "image#r9-1-3": {
+   "props":{
+     "src":"assets/logo_enel.80a90f6bf954e757af67c673220c4de22d31da6a.svg",
+      "blockClass":"filter-logos"
+
+   }
+},
+ "image#r9-1-4": {
+   "props":{
+     "src":"assets/logo_expedia.17f513a1efb0658efb13be3dd83bebaf74654a3e.svg",
+    "blockClass":"filter-logos"
+   }
+},
+
+ "flex-layout.row#r9-2": {
+ "children": [
+  "image#r9-2-1",
+  "image#r9-2-2",
+  "image#r9-2-3",
+  "image#r9-2-4"
+  ],
+  "props":{
+  }
+ },
+
+ "image#r9-2-1": {
+   "props":{
+     "src":"assets/logo_finra.e88983829e59920b4b37bff8c813fa781b625dad.svg",
+    "blockClass":"filter-logos"
+   }
+ },
+ "image#r9-2-2": {
+   "props":{
+     "src":"assets/logo_ge.9a440081235a09b9439c1c7a8857c3c2269d1754.svg",
+    "blockClass":"filter-logos"
+   }
+ },
+ "image#r9-2-3": {
+   "props":{
+     "src":"assets/logo_hess.99c356812fb884050e33df73d8f5f3cab8751494.svg",
+    "blockClass":"filter-logos"
+   }
+ },
+ "image#r9-2-4": {
+   "props":{
+     "src":"assets/logo_intuit.d7a4bfff63b1a4e28660150d4852d7aca6b704b1.svg",
+    "blockClass":"filter-logos"
+   }
+ },
+
+ "flex-layout.row#r9-3": {
+ "children": [
+  "image#r9-3-1",
+  "image#r9-3-2",
+  "image#r9-3-3",
+  "image#r9-3-4"
+  ],
+  "props": {
+  }
+ },
+
+ "image#r9-3-1": {
+   "props":{
+     "src":"assets/logo_kelloggs.2e1b4e50906f1948d4f333ffb841d84b10d3873b.svg",
+    "blockClass":"filter-logos"
+   }
+ },
+ "image#r9-3-2": {
+   "props":{
+     "src":"assets/Netflix_Logo.d38389b09abbca6f524f923d90e5bece42930ddc.svg",
+    "blockClass":"filter-logos",
+    "maxWidth": 150
+   }
+ },
+ "image#r9-3-3": {
+   "props":{
+     "src":"assets/logo_philips.005b06f4f815d3e2a8995b04f54626bc566271c2.svg",
+    "blockClass":"filter-logos"
+   }
+ },
+ "image#r9-3-4": {
+   "props":{
+     "src":"assets/logo_workday.88f6d586debca7956d3ddd93d4b34484d6b303b3.svg",
+    "blockClass":"filter-logos"
+   }
+ },
+
+
+//FLEX LAYOUT ROW-9-CHILDREN----------------------------------------------------------------------------
+
+//FLEX LAYOUT ROW-10-CHILDREN----------------------------------------------------------------------------
+"flex-layout.row#inside10":{
+  "children":["flex-layout.col#inside10helper"],
+  "props":{
+    "blockClass": "inside10"
+  }
+},
+
+"flex-layout.col#inside10helper": {
+  "children": [
+    "flex-layout.row#inside10helper-text1",
+    "flex-layout.row#inside10helper-text2",
+    "flex-layout.row#inside10helper"
+  ],
+  "props": {
+    "marginLeft":9,
+    "marginRight":9
+  }
+},
+
+"flex-layout.row#inside10helper-text1":{
+  "children": [
+    "rich-text#r10-1"
+  ]
+},
+
+"flex-layout.row#inside10helper-text2":{
+  "children": [
+    "rich-text#r10-2"
+  ]
+},
+
+
+"flex-layout.row#inside10helper": {
+  "children":[
+    "flex-layout.col#r10c1"
+  ],
+  "props": {
+    "colGap": "2",
+    "colSizing": "equal",
+    "marginTop": "0",
+    "marginBottom": "0",
+    "paddingLeft": "5",
+    "paddingRight": "5"
+  }
+},
+
+"rich-text#r10-1": {
+  "props": {
+    "blockClass": "r10-1",
+    "text": "## Rede global de regiões da AWS",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+
+"rich-text#r10-2": {
+  "props": {
+    "blockClass": "r10-1",
+    "text": "A Nuvem AWS abrange 81 zonas de disponibilidade em 25 regiões geográficas em todo o mundo, com planos já divulgados para mais 21 zonas de disponibilidade e mais 7 regiões da AWS na Austrália, Índia, Indonésia, Israel, Espanha, Suíça e Emirados Árabes Unidos (EAU).",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+
+"flex-layout.col#r10c1": {
+  "children":
+  [
+    "image#r10c1",
+    "rich-text#r10c1-1",
+    "rich-text#r10c1-2"
+  ],
+  "props": {
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r10c1":{
+  "props":{
+    "src":"assets/global-infra_8.5.5eff3288f9413759dd362ec678b76e19b98ee8ac.png"
+  }
+},
+
+"rich-text#r10c1-1": {
+  "props": {
+    "blockClass": "r10-1",
+    "text": "Regiões",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+"rich-text#r10c1-2": {
+  "props": {
+    "blockClass": "r10-1",
+    "text": "Em breve",
+    "textAlignment": "CENTER",
+    "textPosition": "LEFT"
+  }
+},
+
+//END OF FLEX LAYOUT ROW-10-CHILDREN----------------------------------------------------------------------------
+
+
+//FLEX LAYOUT ROW-11-CHILDREN----------------------------------------------------------------------------
+"flex-layout.row#inside11":{
+  "children":["flex-layout.col#inside11helper"],
+  "props":{
+    "blockClass": "inside11"
+  }
+},
+
+"flex-layout.col#inside11helper": {
+  "children": [
+    "flex-layout.row#inside11helper-text1",
+    "flex-layout.row#inside11helper"
+  ],
+  "props": {
+    "marginLeft":9,
+    "marginRight":9
+  }
+},
+
+"flex-layout.row#inside11helper-text1":{
+  "children": [
+    "rich-text#r11-1"
+  ]
+},
+
+"flex-layout.row#inside11helper": {
+  "children":[
+    "flex-layout.col#r11c1", "flex-layout.col#r11c2", "flex-layout.col#r11c3", "flex-layout.col#r11c4"
+  ],
+  "props": {
+    "colGap": "2",
+    "colSizing": "equal",
+    "marginTop": "0",
+    "marginBottom": "0",
+    "paddingLeft": "111",
+    "paddingRight": "111"
+  }
+},
+
+"rich-text#r11-1": {
+  "props": {
+    "blockClass": "r11-1",
+    "text": "## Nuvem projetada para os requisitos mais rigorosos",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+
+"flex-layout.col#r11c1": {
+  "children":
+  [
+    "image#r11c1",
+    "rich-text#r11c1-1",
+    "rich-text#r11c1-2"
+  ],
+  "props": {
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r11c1":{
+  "props":{
+    "src":"assets/Icon-Lock100.971813fcb891772faf5f35eb39fc8053d20e4501.png"
+  }
+},
+
+"rich-text#r11c1-1": {
+  "props": {
+    "blockClass": "r11-1",
+    "text": "**Segurança**",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+"rich-text#r11c1-2": {
+  "props": {
+    "blockClass": "r11-1",
+    "text": "Recursos abrangentes de segurança para cumprir os requisitos mais rigorosos.",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+
+"flex-layout.col#r11c2": {
+  "children":
+  [
+    "image#r11c2",
+    "rich-text#r11c2-1",
+    "rich-text#r11c2-2"
+  ],
+  "props": {
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r11c2":{
+  "props":{
+    "src":"assets/Icon-Check100.4e05732baf0904406676de8d7661e66294743261.png"
+  }
+},
+
+"rich-text#r11c2-1": {
+  "props": {
+    "blockClass": "r11-1",
+    "text": "**Conformidade**",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+"rich-text#r11c2-2": {
+  "props": {
+    "blockClass": "r11-1",
+    "text": "Controles sofisticados, auditoria e credenciamentos de segurança abrangentes.",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+
+"flex-layout.col#r11c3": {
+  "children":
+  [
+    "image#r11c3",
+    "rich-text#r11c3-1",
+    "rich-text#r11c3-2"
+  ],
+  "props": {
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r11c3":{
+  "props":{
+    "src":"assets/Icon-Layers100.94b03792d26711379a1405e76084980bd2115456.png"
+  }
+},
+
+
+"rich-text#r11c3-1": {
+  "props": {
+    "blockClass": "r11-1",
+    "text": "**Modelo híbrido**",
+    "textAlignment":"CENTER",
+    "textPosition":"CENTER"
+  }
+},
+"rich-text#r11c3-2": {
+  "props": {
+    "blockClass": "r11-1",
+    "text": "Crie arquiteturas híbridas que estendem a infraestrutura on-premises para a nuvem.",
+    "textAlignment":"CENTER",
+    "textPosition":"CENTER"
+  }
+},
+"flex-layout.col#r11c4": {
+  "children":
+  [
+    "image#r11c4",
+    "rich-text#r11c4-1",
+    "rich-text#r11c4-2"
+  ],
+  "props": {
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+
+"image#r11c4":{
+  "props":{
+    "src":"assets/Icon-Arrows100.b0f00de32875c9a082f98f860786c38ad9168a94.png"
+  }
+},
+
+
+"rich-text#r11c4-1": {
+  "props": {
+    "blockClass": "r11-1",
+    "text": "**Escalabilidade**",
+    "textAlignment":"CENTER",
+    "textPosition":"CENTER"
+  }
+},
+"rich-text#r11c4-2": {
+  "props": {
+    "blockClass": "r11-1",
+    "text": "Acesse a quantidade de recursos de que precisar e escale conforme suas necessidades em apenas alguns minutos.",
+    "textAlignment":"CENTER",
+    "textPosition":"CENTER"
+  }
+},
+
+//END OF FLEX LAYOUT ROW-11-CHILDREN----------------------------------------------------------------------------
+
+
+//FLEX LAYOUT ROW-12-CHILDREN----------------------------------------------------------------------------
+"flex-layout.row#inside12":{
+  "children":["flex-layout.col#inside12helper"]
+},
+
+"flex-layout.col#inside12helper": {
+  "children": [
+    "flex-layout.row#inside12helper"
+  ],
+  "props": {
+    "marginLeft":9,
+    "marginRight":9
+  }
+},
+
+"flex-layout.row#inside12helper": {
+  "children":["flex-layout.col#r12c1", "flex-layout.col#r12c2", "flex-layout.col#r12c3", "flex-layout.col#r12c4"],
+  "props": {
+    "blockClass":"inside12",
+    "colGap": "2",
+    "colSizing": "equal",
+    "marginTop": "6",
+    "marginBottom": "6",
+    "paddingLeft": "15",
+    "paddingRight": "15"
+  }
+},
+
+
+"flex-layout.col#r12c1": {
+  "children":
+  [
+    "image#r12c1",
+    "rich-text#r12c1"
+  ],
+  "props": {
+    "blockClass": "info-card-example",
+    "textAlignment": "center",
+    "border": "all",
+    "borderColor": "light-gray",
+    "marginLeft": "3",
+    "marginRight": "3"
+  }
+},
+"image#r12c1":{
+  "props":{
+    "src":"assets/Site-Merch_Analyst-Reports_Editorial.4c932459d92971eeaa79ee85a1e615c974cdbb55.png"
+  }
+},
+
+"rich-text#r12c1": {
+  "props": {
+    "text": "**Relatórios de analistas**\nLeia o que os principais analistas, como o Gartner e a IDC, estão dizendo sobre a AWS",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+
+"flex-layout.col#r12c2": {
+  "children":
+  [
+    "image#r12c2",
+    "rich-text#r12c2"
+  ],
+  "props": {
+  "blockClass": "info-card-example",
+  "border": "all",
+  "borderColor": "light-gray",
+  "marginLeft": "3",
+  "marginRight": "3"
+  }
+},
+
+"image#r12c2":{
+  "props":{
+    "src":"assets/Site-Merch_Training_Editorial.5cc72ab0552ba66ef4e36a1a60ee742bc31113c7.png"
+  }
+},
+
+"rich-text#r12c2": {
+  "props": {
+    "text": "**Treinamento da AWS**\nCursos digitais gratuitos para ajudar a desenvolver as suas habilidades",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+
+"flex-layout.col#r12c3": {
+  "children":
+  [
+    "image#r12c3",
+    "rich-text#r12c3"
+  ],
+  "props": {
+  "blockClass": "info-card-example",
+  "border": "all",
+  "borderColor": "light-gray",
+  "marginLeft": "3",
+  "marginRight": "3"
+  }
+},
+"image#r12c3":{
+  "props":{
+    "src":"assets/Site-Merch_APN_Editorial.12df33fb7e0299389b086fb48dba7b9deeef07df.png"
+  }
+},
+
+"rich-text#r12c3": {
+  "props": {
+    "text": "**Rede de parceiros da AWS**\nJunte-se à rede de parceiros da AWS para criar e desenvolver as atividades da empresa na nuvem",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+
+"flex-layout.col#r12c4": {
+  "children":
+  [
+    "image#r12c4",
+    "rich-text#r12c4"
+  ],
+  "props": {
+  "blockClass": "info-card-example",
+  "textAlignment": "center",
+  "border": "all",
+  "borderColor": "light-gray",
+  "marginLeft": "3",
+  "marginRight": "3"
+  }
+},
+"image#r12c4":{
+  "props":{
+    "src":"assets/Site-Merch_Builders-Library_Editorial.92d1f7f10f09eca6080e320d962307e37e8ba1b4.png"
+  }
+},
+"rich-text#r12c4": {
+  "props": {
+    "text": "**A Amazon Builder's Library**\nSaiba como a Amazon cria e opera softwares por meio dos próprios criadores",
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER"
+  }
+},
+//FLEX LAYOUT ROW-12-CHILDREN----------------------------------------------------------------------------
+
+
+
+
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
@@ -60,6 +1733,9 @@
       "orderBy": "OrderByTopSaleDESC"
     }
   },
+
+
+
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
@@ -89,8 +1765,15 @@
 
   "rich-text#question": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
       "blockClass": "question"
+    }
+  },
+
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Summer",
+      "blockClass": "shelfTitle"
     }
   },
 

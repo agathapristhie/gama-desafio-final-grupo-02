@@ -6,6 +6,9 @@
   text-decoration: underline;
 }
 
+.imageElement{
+  padding:2px;
+}
 
 .infoCardContainer--info-card-home {
   max-width: 1520px;
@@ -111,4 +114,24 @@
   color: #3f3f40;
   font-weight: bold;
   font-size: 30px;
+}
+
+
+.flexRowContent--first-2{
+  background: #242F3E !important;
+}
+
+
+.imageElement {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageElement--filter-logos {
+  filter: grayscale(100%);
+}
+
+.imageElement--filter-logos:hover {
+  filter: none!important;
 }

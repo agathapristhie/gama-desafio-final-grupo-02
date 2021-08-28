@@ -1,11 +1,10 @@
-.row--menu-row {
-  padding-right: 24px;
+.row {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 21px;
+  padding-top: 10px;
 }
 
-.row--menu-row .rowContainer {
-  align-items: flex-start;
-}
-
-.row--payment-methods {
-  padding-top: 16px;
+.flexRowContent--first-2{
+  background: #242F3E !important;
 }

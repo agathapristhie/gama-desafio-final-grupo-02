@@ -25,3 +25,22 @@
   padding-left: .5rem;
   padding-right: .5rem;
 }
+
+.paginationDot {
+  background-color: #5B6874;
+}
+
+.paginationDot:hover {
+  background-color: #E2E8EA;
+}
+
+.paginationDot--isActive {
+  background-color: #E2E8EA;
+}
+
+.caretIcon--carousel {
+  height: 60px;
+  width: 50px;
+  color:#B1B8BB;
+
+}

@@ -20,7 +20,6 @@
       "fullWidth": true
     }
   },
-
   "flex-layout.row#2-desktop": {
     "children": ["flex-layout.col#logoaws", "notification.bar#home"],
     "props": {
@@ -36,8 +35,7 @@
   },
   "notification.bar#home": {
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
-    }
+}
   },
   "flex-layout.row#3-desktop": {
     "props": {
