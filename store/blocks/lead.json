@@ -2,7 +2,8 @@
   "store.custom#lead": {
     "blocks": [
       "flex-layout.row#lead",
-      "leadForm"
+      "leadForm",
+      "leadList"
     ]
   },
 
