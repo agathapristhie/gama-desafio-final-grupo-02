@@ -7,5 +7,8 @@
   },
   "leadForm": {
     "component": "leadForm"
+  },
+  "leadList": {
+    "component": "LeadList"
   }
 }
