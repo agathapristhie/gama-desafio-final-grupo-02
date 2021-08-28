@@ -2,13 +2,17 @@
   "store.custom#pesquisateste": {
     "blocks": [
       "image#landingbanner",
+     /*  "flex-layout.row#banner", */
       "search-result-layout.customQuery#pesquisa1analises"
     ]
   },
+/*   "flex-layout.row#banner": {
+    "children": []
+  }, */
   "image#landingbanner": {
     "props": {
-      "minWidth": "100%",
-      "src": "assets/bannerawsproducts.png"
+      "minWidth": "50%",
+      "src": "assets/banner2.jpeg"
     }
   },
   "search-result-layout.customQuery#pesquisa1analises": {
