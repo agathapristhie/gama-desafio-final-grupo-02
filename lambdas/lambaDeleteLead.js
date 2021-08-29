@@ -17,7 +17,6 @@ exports.handler = async (event) => {
     
     await dynamodb.delete(params).promise();
     status = "A lead foi deletada com sucesso!"
-
     const response = { 
             statusCode: 200, 
             body: {

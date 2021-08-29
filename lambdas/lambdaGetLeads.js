@@ -7,11 +7,6 @@ let tableName = 'leadsDesafioFinalHiringCoders';
 exports.handler = async () => {
     let params = {
         TableName: tableName,
-        FilterExpression: "#client = :client_val",
-        ExpressionAttributeNames: {
-            "#client": "client",
-        },
-        ExpressionAttributeValues: { ":client_val": false }
     };
     
     let consulta = await dynamodb.scan(params).promise();

@@ -1,7 +1,8 @@
 export default interface Lead {
     name: string;
     email: string;
-    phone: number|string;
+    phone: string;
     date?: string;
+    clientDate?: string;
     client?: boolean;
   }
