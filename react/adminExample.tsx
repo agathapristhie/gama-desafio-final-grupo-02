@@ -1,17 +1,24 @@
 import React, { FC } from 'react'
 import { Layout, PageBlock } from 'vtex.styleguide'
-import { useQuery } from 'react-apollo'
+//import {Form} from './components/Form/stylesForm'
+//import { useQuery } from 'react-apollo'
 
-import helloworld from './graphql/helloworld.gql'
+import  {orders} from '../node/handler/orders'
+
+//console.log(Hook)
+
+
+let resposta = JSON.stringify(orders);
+console.log(resposta)
 
 const AdminExample: FC = () => {
-  const { data } = useQuery(helloworld)
-
-  return (
+//const { data } = useQuery(Orders)
+return (
     <Layout>
       <PageBlock title="Titulo" subtitle="Alguma explicação." variation="full">
         <h1>Hello, World!</h1>
-        <p>{data?.helloworld}</p>
+        {/* <div>{orders}</div> */}
+          <p>{resposta}</p>
       </PageBlock>
     </Layout>
   )

@@ -4,20 +4,18 @@ import {
   Service,
   ServiceContext,
   ParamsContext,
-  RecorderState,
-  method,
+  RecorderState
 } from '@vtex/api'
 import { Clients } from './clients'
-import { analytics } from './handler/analytics'
-import { updateLiveUsers } from './events/liveUsersUpdate'
+
+
+
+const MEDIUM_TIMEOUT_MS = 2 * 1000
 
 // Create a LRU memory cache for the Status client.
 // The @vtex/api HttpClient respects Cache-Control headers and uses the provided cache.
 const memoryCache = new LRUCache<string, any>({ max: 5000 })
 metrics.trackCache('status', memoryCache)
-
-const TREE_SECONDS_MS = 3 * 1000
-const CONCURRENCY = 10
 
 declare global {
   type Context = ServiceContext<Clients, State>
@@ -32,25 +30,8 @@ export default new Service<Clients, State, ParamsContext>({
     implementation: Clients,
     options: {
       default: {
-        retries: 2,
-        timeout: 10000,
-      },
-      events: {
-        exponentialTimeoutCoefficient: 2,
-        exponentialBackoffCoefficient: 2,
-        initialBackoffDelay: 50,
-        retries: 1,
-        timeout: TREE_SECONDS_MS,
-        concurrency: CONCURRENCY,
+        timeout: MEDIUM_TIMEOUT_MS,
       },
     },
-  },
-  routes: {
-    analytics: method({
-      GET: [analytics],
-    }),
-  },
-  events: {
-    liveUsersUpdate: updateLiveUsers,
   },
 })

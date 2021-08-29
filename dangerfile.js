@@ -13,8 +13,7 @@ const config = {
     pr_size: ['warn', { additionLimit: 800, deletionLimit: -1 }],
     lock_file: 'warn',
     no_ignored_test: ['fail', { pattern: /test|spec/i }],
-    no_debugger: ['fail', { pattern: /\.[tj]sx?$/i }],
-    enforce_graphql_provider: 'off',
+    no_debugger: ['fail', { pattern: /\.[tj]sx?$/i }]
   },
 }
 

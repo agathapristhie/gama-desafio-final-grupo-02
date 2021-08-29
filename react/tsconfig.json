@@ -15,5 +15,5 @@
     "./**/*.tsx",
     "./**/*.ts",
     "whatsappComptsx"
-  ]
+, "index.js"  ]
 }
