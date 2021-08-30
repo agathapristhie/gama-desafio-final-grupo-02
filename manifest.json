@@ -1,0 +1,45 @@
+{
+  "name": "desafiofinalgrupo02",
+  "vendor": "hiringcoders202102",
+  "version": "0.0.1",
+  "title": "DESAFIO FINAL GAMA ACADEMY - GRUPO 02",
+  "description": "Aplicação desenvolvida integrando apis VTEX e AWS para retornar os leads que se tornam clientes ",
+  "categories": [],
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "node": "6.x",
+    "docs": "0.x",
+    "admin": "0.x",
+    "graphql": "1.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.myvtex.com",
+        "path": "/api/oms/*"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

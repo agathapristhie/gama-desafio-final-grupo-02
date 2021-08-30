@@ -1,0 +1,11 @@
+{
+  "whatsappComp": {
+    "component": "whatsappComp"
+  },
+  "detailsButton": {
+    "component": "detailsButton"
+  },
+  "leadForm": {
+    "component": "leadForm"
+  }
+}
