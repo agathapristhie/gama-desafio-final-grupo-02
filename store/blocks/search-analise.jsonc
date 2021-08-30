@@ -12,7 +12,8 @@
   "image#landingbanner": {
     "props": {
       "minWidth": "100%",
-      "src": "assets/bannerfinal.jpeg"
+      "src": "assets/bannerfinal.jpeg",
+      "blockClass": "bannerproduct"
     }
   },
   "search-result-layout.customQuery#pesquisa1analises": {
