@@ -21,7 +21,7 @@
 
 .savings {
   font-weight: 500;
-  color: #79B03A;
+  color: #dbaf00;
 }
 
 .sellingPriceValue--summary {
@@ -31,17 +31,17 @@
 }
 
 .savings--summary {
-  background: #8BC34A;
-  border-radius: 1000px;
+  background: #ffb100;  border-radius: 1000px;
   align-items: center;
   display: flex;
 
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   font-size: 0.875rem;
   font-weight: 600;
   vertical-align: baseline;
   color: #FFFFFF;
+
 }
 
 .savings-discount--summary {
@@ -51,6 +51,8 @@
   color: #FFFFFF;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+
+
 }
 
 .listPrice--summary {

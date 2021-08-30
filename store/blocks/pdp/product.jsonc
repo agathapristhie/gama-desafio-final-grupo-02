@@ -107,8 +107,8 @@
     "children": [
       "flex-layout.row#product-name",
       "product-rating-summary",
-      "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
+      "flex-layout.row#list-price-savings",
       "product-installments",
       "product-separator",
       "product-identifier.product",
