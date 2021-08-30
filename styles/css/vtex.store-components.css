@@ -155,9 +155,7 @@
 .imageElement--bannerproduct {
   text-align: center;
   margin-top: -3px;
-  margin-left: auto;
-
-  margin-right: auto;
+  Width: 100%;
 }
 
 .imageElement--filter-logos {
