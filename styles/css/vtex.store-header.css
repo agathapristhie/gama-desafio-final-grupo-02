@@ -50,25 +50,6 @@
     backdrop-filter: blur(8px);
   }
 
-  /* header background when stuck and not hovered */
-  :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
-  :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
-    :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
-    background: rgba(240, 240, 240, 0.8);
-  }
-}
-
-/* stick wrapper with the same color as the desktop/mobile header */
-:global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
-  background-color: #f0f0f0;
-}
-
-/* resize the logo for neat effect */
-:global(.vtex-sticky-layout-0-x-wrapper--stuck)
-  :global(.vtex-store-components-3-x-logoLink) {
-  transform: scale(0.85);
-}
 
 @media (prefers-reduced-motion: reduce) {
   :global(.vtex-sticky-layout-0-x-container)
