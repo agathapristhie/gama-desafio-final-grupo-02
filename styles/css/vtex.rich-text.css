@@ -5,7 +5,7 @@
 }
 
 .container--shelfTitle {
-  color: #727273;
+  color: #242F3E;
   justify-content: center;
   text-align: center;
 }
@@ -126,3 +126,12 @@
 .container--r5-2-1-2:hover {
   color:#FF9D00;
 }
+.headingLevel1--title {
+  color:#242F3E;
+}
+.paragraph--card-info {
+  display: flex;
+  text-align: justify;
+  color: #242f3e
+}
+

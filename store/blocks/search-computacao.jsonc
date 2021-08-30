@@ -9,7 +9,7 @@
   "image#computacao": {
     "props": {
       "minWidth": "100%",
-      "src": "assets/bannerfinal.jpeg",
+      "src": "assets/bannerfinal.jpg",
       "blockClass": "bannerproduct"
     }
   },

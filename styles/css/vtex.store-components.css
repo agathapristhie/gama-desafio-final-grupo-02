@@ -7,7 +7,7 @@
 }
 
 .imageElement{
-  padding:2px;
+  padding:0px;
 }
 
 .infoCardContainer--info-card-home {
@@ -157,6 +157,7 @@
 
 .imageElement--bannerproduct {
   text-align: center;
+  display: flex;
   margin-top: -3px;
   Width: 100%;
 }
