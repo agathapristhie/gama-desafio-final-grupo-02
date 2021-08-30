@@ -21,7 +21,6 @@
     "children": [
       "logo#desktop",
       "header-spacer",
-      //"search-bar",
       "locale-switcher",
       "login",
       "minicart.v2"
@@ -44,8 +43,8 @@
   },
   "search-bar": {
     "props": {
-      //"maxWidth": 100,
-      "containerMode": "overlay"
+      "containerMode": "overlay",
+      "blockClass": "search-desktop"
     }
   },
   "login": {
@@ -55,7 +54,7 @@
       "emailPlaceholder": "e-mail",
       "passwordPlaceholder": "password",
       "showPasswordVerificationIntoTooltip": true,
-      "blockClass": "loginbutton"
+      "blockClass": "loginButton"
     }
   },
   "flex-layout.col#spacer": {
@@ -86,7 +85,7 @@
       "drawer",
       "logo#mobile",
       "flex-layout.col#spacer",
-      "login",
+      "search-bar#mobile",
       "minicart.v2"
     ],
     "props": {
@@ -103,9 +102,11 @@
   },
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#about-us",
+      "menu-item#Análises",
+      "menu-item#GerenciamentoNuvem",
+      "menu-item#Computação"
+
     ],
     "props": {
       "orientation": "vertical"
@@ -115,8 +116,16 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/logo-aws.png",
-      "width": "70"
+      "url": "assets/logo-mobile.png",
+      "width": "60"
+    }
+  },
+  "search-bar#mobile": {
+    "props": {
+      "blockClass": "searchmobile",
+      "displayMode": "search-button",
+      "maxWidth": 100,
+      "placeholder": " "
     }
   }
 }

@@ -96,6 +96,9 @@
 }
 
 @media only screen and (min-width: 640px) {
+  /* .searchBarContainer--searchmobile {
+    border-bottom: thin solid #ffffff;
+  } */
   .newsletter .container {
     padding: 140px;
   }
