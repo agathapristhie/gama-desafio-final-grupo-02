@@ -31,6 +31,12 @@
     },
     "children": ["product-description"]
   },
+  "product-description":{
+    "props":{
+      "collapseContent": true,
+      "blockClass": "pdpdescription"
+    }
+  },
   "condition-layout.product#availability": {
     "props": {
       "conditions": [
