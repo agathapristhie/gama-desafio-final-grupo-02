@@ -294,7 +294,8 @@
 
 "rich-text#r2c1-1": {
   "props": {
-    "text": "**Publicidade e marketing**"
+    "text": "**Publicidade e marketing**",
+    "blockClass": "blue-title"
   }
 },
 "rich-text#r2c1-2": {
@@ -304,7 +305,8 @@
 },
 "rich-text#r2c1-3": {
   "props": {
-    "text": "Saiba mais »"
+    "text": "Saiba mais »",
+    "blockClass": "blue-title"
   }
 },
 
@@ -334,7 +336,8 @@
 
 "rich-text#r2c2-1": {
   "props": {
-    "text": "**Serviços financeiros**"
+    "text": "**Serviços financeiros**",
+    "blockClass": "blue-title"
   }
 },
 "rich-text#r2c2-2": {
@@ -344,7 +347,8 @@
 },
 "rich-text#r2c2-3": {
   "props": {
-    "text": "Saiba mais »"
+    "text": "Saiba mais »",
+    "blockClass": "blue-title"
   }
 },
 
@@ -375,7 +379,8 @@
 
 "rich-text#r2c3-1": {
   "props": {
-    "text": "**Tecnologia de jogos**"
+    "text": "**Tecnologia de jogos**",
+    "blockClass": "blue-title"
   }
 },
 "rich-text#r2c3-2": {
@@ -385,7 +390,8 @@
 },
 "rich-text#r2c3-3": {
   "props": {
-    "text": "Saiba mais »"
+    "text": "Saiba mais »",
+    "blockClass": "blue-title"
   }
 },
 
@@ -421,7 +427,8 @@
 
 "rich-text#r2c4-1": {
   "props": {
-    "text": "**Mídia e entretenimento**"
+    "text": "**Mídia e entretenimento**",
+    "blockClass": "blue-title"
   }
 },
 "rich-text#r2c4-2": {
@@ -431,7 +438,8 @@
 },
 "rich-text#r2c4-3": {
   "props": {
-    "text": "Saiba mais »"
+    "text": "Saiba mais »",
+    "blockClass": "blue-title"
   }
 },
 //END OF FLEX LAYOUT ROW-2-CHILDREN----------------------------------------------------------------------------
@@ -537,7 +545,8 @@
 
 "rich-text#r3c1-1": {
   "props": {
-    "text": "**Análise e data lakes**"
+    "text": "**Análises e data lakes**",
+    "blockClass": "blue-title"
   }
 },
 "rich-text#r3c1-2": {
@@ -547,7 +556,8 @@
 },
 "rich-text#r3c1-3": {
   "props": {
-    "text": "Saiba mais »"
+    "text": "Saiba mais »",
+    "blockClass": "blue-title"
   }
 },
 
@@ -577,7 +587,8 @@
 
 "rich-text#r3c2-1": {
   "props": {
-    "text": "**Machine learning**"
+    "text": "**Machine learning**",
+    "blockClass": "blue-title"
   }
 },
 "rich-text#r3c2-2": {
@@ -587,7 +598,8 @@
 },
 "rich-text#r3c2-3": {
   "props": {
-    "text": "Saiba mais »"
+    "text": "Saiba mais »",
+    "blockClass": "blue-title"
   }
 },
 
@@ -618,7 +630,8 @@
 
 "rich-text#r3c3-1": {
   "props": {
-    "text": "**Computação sem servidor**"
+    "text": "**Computação sem servidor**",
+    "blockClass": "blue-title"
   }
 },
 "rich-text#r3c3-2": {
@@ -628,7 +641,8 @@
 },
 "rich-text#r3c3-3": {
   "props": {
-    "text": "Saiba mais »"
+    "text": "Saiba mais »",
+    "blockClass": "blue-title"
   }
 },
 
@@ -658,7 +672,8 @@
 
 "rich-text#r3c4-1": {
   "props": {
-    "text": "**Armazenamento**"
+    "text": "**Armazenamento**",
+    "blockClass": "blue-title"
   }
 },
 "rich-text#r3c4-2": {
@@ -668,7 +683,8 @@
 },
 "rich-text#r3c4-3": {
   "props": {
-    "text": "Saiba mais »"
+    "text": "Saiba mais »",
+    "blockClass": "blue-title"
   }
 },
 //END OF FLEX LAYOUT ROW-3-CHILDREN----------------------------------------------------------------------------

@@ -139,3 +139,14 @@
   color: #242f3e
 }
 
+
+.wrapper--footer-1 {
+justify-content: flex-start;
+}
+
+/*------29-08-------*/
+
+
+.paragraph--blue-title {
+  color: #007EB9;
+}
