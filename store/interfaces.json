@@ -8,7 +8,7 @@
   "leadForm": {
     "component": "leadForm"
   },
-  "ordersTela":{
-    "ordersTela": "ordersTela"
+  "leadList": {
+    "component": "LeadList"
   }
 }

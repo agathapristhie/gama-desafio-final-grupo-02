@@ -1,7 +1,7 @@
 {
   "admin/test": "teste",
   "store/test": "teste",
-  "admin-example.navigation.label": "Treinamento de IO",
+  "admin-example.navigation.label": "Clientes & Prospectos",
   "admin-example.navigation.search.kws": "mock, test, treinamento, io",
   "admin-example.navigation.insight": "Informações",
   "admin-example.navigation.management": "Gerenciamento"

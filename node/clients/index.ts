@@ -1,16 +1,30 @@
 import { IOClients } from '@vtex/api'
-import { Catalog } from '@vtex/clients'
-import  Status  from './status'
 
-// Extend the default IOClients implementation with our own custom clients.
-export class Clients extends IOClients {
-  public get status() {
-    return this.getOrSet('status', Status)
+
+import { Checkout, Catalog } from '@vtex/clients'
+import { Context } from 'vm'
+import  OMSHC  from './oms'
+
+
+export const queries = {
+ order: ( { clients: { oms } }: Context) =>
+    oms.orderid(""),
+}
+
+
+export default class Clients extends IOClients {
+
+  public get oms() {
+    return this.getOrSet('oms', OMSHC)
+  }
+
+   public get checkout() {
+    return this.getOrSet('checkout', Checkout)
   }
 
   public get catalog() {
     return this.getOrSet('catalog', Catalog)
   }
 
-
 }
+

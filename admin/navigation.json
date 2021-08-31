@@ -6,10 +6,6 @@
       {
          "labelId": "admin-example.navigation.insight",
          "path": "/admin/iotraining"
-       },
-       {
-            "labelId": "admin-example.navigation.management",
-             "path": "/admin/otheriotraining"
-        }
+       }
     ]
 }

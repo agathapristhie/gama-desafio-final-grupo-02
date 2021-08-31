@@ -4,9 +4,11 @@ import React from 'react'
 
 import {useState} from 'react'
 
-import createAPI from  './createLeadAPI'
+//import createAPI from  './createLeadAPI'
 
-import newId from './newId'
+import { postLeadsAPI } from './resources/'
+
+import { Lead } from './commons/interfaces'
 
 import { useForm} from 'react-hook-form'
 
@@ -25,14 +27,11 @@ const leadForm: React.FC = () => { //formulário para cadastro de leads
       // é feita uma chamada para API gateway, que armazena os dados no dynamo.db
   //  const clientStore = JSON.stringify(clientdata);
     //localStorage.setItem('@client', clientStore);
-
-    const id = newId();
-
-    setLoading(true);
-    createAPI(id, clientdata.name, clientdata.phone, clientdata.email);
-    setLoading(false);
-
-    })
+     setLoading(true);
+  //  createAPI(id, clientdata.name, clientdata.phone, clientdata.email);
+   let lead:Lead =  {email: clientdata.email, phone: clientdata.phone, name: clientdata.name}
+   postLeadsAPI (lead)
+  })
 
     return (
       <div key="leadForm" className="leadFormContainer">

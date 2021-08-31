@@ -1,27 +1,18 @@
 import React, { FC } from 'react'
 import { Layout, PageBlock } from 'vtex.styleguide'
-//import {Form} from './components/Form/stylesForm'
-//import { useQuery } from 'react-apollo'
-
-import  {orders} from '../node/handler/orders'
-
-//console.log(Hook)
-
-
-let resposta = JSON.stringify(orders);
-console.log(resposta)
+import LeadList from './LeadList'
 
 const AdminExample: FC = () => {
 //const { data } = useQuery(Orders)
 return (
     <Layout>
-      <PageBlock title="Titulo" subtitle="Alguma explicação." variation="full">
-        <h1>Hello, World!</h1>
-        {/* <div>{orders}</div> */}
-          <p>{resposta}</p>
+      <PageBlock title="Clients e Leads - AWS" subtitle="Cadastro de Leads e Clientes" variation="full">
+       <LeadList/>
+
       </PageBlock>
     </Layout>
   )
 }
+
 
 export default AdminExample

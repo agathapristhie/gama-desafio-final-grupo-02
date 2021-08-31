@@ -4,14 +4,15 @@
     "minReplicas": 2,
     "maxReplicas": 10,
 
-    "routes": {
-      "status": {
-        "path": "/_v/status/:code",
-        "public": true
+    "events": {
+      "allStates": {
+        "sender": "vtex.orders-broadcast",
+        "topics": ["order-status-updated"]
       },
-    "orders": {
-      "path": "/_v/app/orders/",
-      "public": true
-    }
+      "someStates": {
+        "sender": "vtex.orders-broadcast",
+        "topics": ["cancel", "order-created"]
+      }
   }
 }
+
