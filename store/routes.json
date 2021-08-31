@@ -16,5 +16,8 @@
   },
   "store.custom#computacao": {
     "path": "/computacao"
+  },
+  "store.custom#lead": {
+    "path": "/lead"
   }
 }

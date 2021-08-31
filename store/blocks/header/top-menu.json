@@ -4,8 +4,24 @@
       "menu-item#about-us",
       "menu-item#Análises",
       "menu-item#GerenciamentoNuvem",
-      "menu-item#Computação"
+      "menu-item#Computação",
+      "menu-item#Desconto"
     ]
+  },
+  "menu-item#Desconto": {
+    "props": {
+      "id": "menu-item-desconto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/lead",
+        "noFollow": false,
+        "tagTitle": "Desconto",
+        "text": "GANHE 10% DE DESCONTO "
+      }
+    }
   },
   "menu-item#Análises": {
     "props": {

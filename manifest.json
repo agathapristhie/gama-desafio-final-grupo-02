@@ -1,7 +1,7 @@
 {
   "vendor": "hiringcoders202102",
-  "name": "aws-theme",
-  "version": "4.4.2",
+  "name": "lojafinal",
+  "version": "0.0.3",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "vtex.store": "2.x",
+    "hiringcoders202102.desafiofinalgrupo02": "0.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",
     "vtex.store-footer": "2.x",
