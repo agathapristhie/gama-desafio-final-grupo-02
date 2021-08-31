@@ -16,6 +16,29 @@
   background-color: #e6f1e6;
   padding: 0px;
 }
+/*Descrição headline do banner*/
+.infoCardHeadline--info-card-home{
+  color: #ffffff;
+  font-size: 30px;
+  margin-left: 60px;
+  white-space: nowrap;
+}
+
+/*style do subhead slider home*/
+.infoCardSubhead{
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 60px;
+  word-break: break-word;
+}
+
+.infoCardImage--info-card-home{
+  max-height: 1000px;
+}
+/* button saiba mais slider*/
+.infoCardCallActionContainer {
+  margin-left: 60px;
+}
 
 .newsletter {
   background-color: #03054e;

@@ -31,9 +31,10 @@
             "isFullModeStyle": true,
             "textPosition": "left",
             "imageUrl": "https://hiringcoders202102.vtexassets.com/assets/vtex.file-manager-graphql/images/25441344-d12f-427b-b994-396fd2426442___ab2b721811f3ae23ad2c8a5e9568b140.png",
-            "headline": "Use gratuitamente o Amazon EC2, o S3 E muitos outros por ano",
-            "callToActionText": "Saiba mais sobre o nível gratuito da AWS  >>",
-            "callToActionUrl": "/sale/d",
+            "headline": "Use gratuitamente o Amazon EC2, o S3",
+            "subhead": " E muitos outros por ano",
+            "callToActionText": "Saiba mais do nível gratuito  >>",
+            "callToActionUrl": "#",
             "blockClass": "info-card-home",
             "textAlignment": "left"
         }
@@ -44,7 +45,8 @@
             "isFullModeStyle": true,
             "textPosition": "left",
             "imageUrl": "https://hiringcoders202102.vtexassets.com/assets/vtex.file-manager-graphql/images/990db433-e57e-43b1-8c3f-9479cb9288eb___a19262b0f551a7def5ad37986d52156a.png",
-            "headline": "Conheça a plataforma, os produtos de nuvem e os recursos da AWS",
+            "headline": "Conheça a plataforma",
+            "subhead": "Os produtos de nuvem e os recursos da AWS",
             "callToActionText": "Conceitos básicos  >>",
             "callToActionUrl": "#",
             "blockClass": "info-card-home",
@@ -58,8 +60,9 @@
             "textPosition": "left",
             "imageUrl": "https://hiringcoders202102.vtexassets.com/assets/vtex.file-manager-graphql/images/7901429b-ffbe-4799-bf4b-69a81c87d541___8c24478110359b1e44a7e7e8b93ff751.png",
             "headline": "Centro de recursos de conceitos básicos",
+            "subhead": "Documentação técnica e outros recursos gratuitos para ajudar você a criar com a AWS",
             "callToActionText": "Conceitos básicos  >>",
-            "callToActionUrl": "/sale/d",
+            "callToActionUrl": "#",
             "blockClass": "info-card-home",
             "textAlignment": "left"
         }
@@ -71,8 +74,9 @@
             "textPosition": "left",
             "imageUrl": "https://hiringcoders202102.vtexassets.com/assets/vtex.file-manager-graphql/images/cd8cc171-5e2c-440a-957c-c082d5315497___499b913e3910df9f6610f8f60eeba400.png",
             "headline": "Revolucione seu negócio",
+            "subhead": "Líderes eficazes confiam em dados para tomar decisões informadas e executar ações significativa. Eles constroem uma estratégia moderna de dados.",
             "callToActionText": "Saiba mais  >>",
-            "callToActionUrl": "/sale/d",
+            "callToActionUrl": "#",
             "blockClass": "info-card-home",
             "textAlignment": "left"
         }
@@ -84,8 +88,9 @@
             "textPosition": "left",
             "imageUrl": "https://hiringcoders202102.vtexassets.com/assets/vtex.file-manager-graphql/images/ffd10da5-e865-4559-b3e1-93f92f2c999f___856e269975a542e96229e06a318e2802.png",
             "headline": "Trabalho e ensino remotos",
+            "subhead": "Ofereça suporte para funcionários, estudantes e agentes de centrais de atendimento",
             "callToActionText": "Saiba mais  >>",
-            "callToActionUrl": "/sale/d",
+            "callToActionUrl": "#",
             "blockClass": "info-card-home",
             "textAlignment": "left"
         }

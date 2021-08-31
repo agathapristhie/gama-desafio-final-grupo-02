@@ -4,6 +4,10 @@
   justify-content: center;
 }
 
+.paragraph{
+  padding-left: 15px;
+}
+
 .container--shelfTitle {
   color: #242F3E;
   justify-content: center;

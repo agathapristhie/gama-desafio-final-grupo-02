@@ -52,6 +52,13 @@
 .flexRow--deals .flexCol {
   align-items: center;
 }
+/*style borda card*/
+.flexCol{
+  margin: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  border-color: #D5DBDB;
+}
 
 .flexCol--filterCol {
   max-width: 500px;
