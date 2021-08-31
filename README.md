@@ -10,6 +10,7 @@
 * Lucas dos Santos Xavier;
 * Pedro Thiago Marmello;
 * Priscila Palma Portes Del Vacchio.
+* Vinícius da Silva Soares
 
 ## DIVISAO DO GRUPO
 Subdividimos nosso grupo em ** BACKEND e FRONTEND **, ficando algumas pessoas responsáveis pela criação da página e outras pela instituição do Servidor e APIs conforme pedia o briefing do desafio. 
