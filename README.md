@@ -35,7 +35,8 @@ Instituimos a página Sobre Nós, onde nossos clientes terão algumas informaç�
 ## BACKEND 
 Como Mencionado acima nossos clientes podem ter acesso a um desconto para a primeira compra preenchendo um pequeno cadastro, que leva menos de 1 minuto pra ser concluido. 
 
-Nesse cadastro, para salvar os dados dos nossos possíveis clientes, utilizamos uma API da AWS Lambda, para salvar esses dados e estarem disponiveis no Admin a qualquer momento, até para termos ideia de como está a nossa conversão de prospectos para clientes.
+Nesse cadastro, para salvar os dados dos nossos possíveis clientes, utilizamos uma API da AWS Lambda e os dados são salvos no banco de dados DynamoDB da AWS. 
 
-Assim que nossos prospectos efetuam uma compra, no caso a primeira, nosso Back End traz essa informação alterando o status desse prospecto, para cliente, e assim temos um controle de conversão em tempo real. 
+Estes dados são exportados para a tela do admin conforme demonstrado em nossa apresentação.
+
 
