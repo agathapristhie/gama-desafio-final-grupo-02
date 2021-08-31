@@ -90,8 +90,8 @@
           "muted-5": "#f2f4f5"
         },
         "active-background": {
-          "action-primary": "#0c389f",
-          "action-secondary": "#d2defc",
+          "action-primary": "#F1992E",
+          "action-secondary": "#F1992E",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
           "success--faded": "#eafce3",
