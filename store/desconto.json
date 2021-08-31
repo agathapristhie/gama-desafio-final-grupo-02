@@ -1,0 +1,7 @@
+{
+  "store.custom#lead":{
+    "children": [
+      "leadForm"
+    ]
+  }
+}
