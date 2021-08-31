@@ -52,6 +52,8 @@
 .flexRow--deals .flexCol {
   align-items: center;
 }
+<<<<<<< HEAD
+=======
 /*style borda card*/
 .flexCol{
   margin: 10px;
@@ -59,6 +61,7 @@
   padding-top: 15px;
   border-color: #D5DBDB;
 }
+>>>>>>> 0683eb0103a178500fa8a613d32aa811aaafa37c
 
 .flexCol--filterCol {
   max-width: 500px;
@@ -137,7 +140,7 @@
 }
 
 .flexRowContent--row2, .flexRowContent--row3{
-  background: #F2F4F4;
+  background: #F2rF4F4;
 }
 
 .flexCol--cards-row-2, .flexCol--cards-row-3{
@@ -170,20 +173,6 @@
   filter: none!important;
 }
 
-.flexRowContent--first-2-footer, .flexCol--info-card-example {
+.flexRowContent--first-2-footer {
   padding: 1rem;
-}
-
-/*------29-08-------*/
-
-.flexRow, .flexRowContent {
-  width: 100% !important;
-}
-
-.flexCol--cards-row-2, .flexCol--cards-row-3 {
-  text-align: left !important;
-}
-
-.flexColChild {
-  height: auto !important;
 }
