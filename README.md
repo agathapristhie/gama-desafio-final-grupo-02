@@ -1,7 +1,7 @@
 # DESAFIO FINAL - HIRING CODERS - GRUPO 02 - TEMA AWS
 
 ## Integrantes: 
-#### * Cecilia Garcia Amora;
+* Cecilia Garcia Amora;
 #### * Felipe Gomes Belarmino;
 #### * Glauber Jesus Loiola;
 #### * Hugo Leonardo Baltazar;
