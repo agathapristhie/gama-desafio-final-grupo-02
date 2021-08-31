@@ -22,7 +22,7 @@ A divisão destas tarefas ficou a cargo com as habilidades de cada dev, tanto no
 ## CONSTRUÇÃO DO SITE - FRONT END
 Na construção da página do nosso "cliente", na parte de front-end, utilizamos a construção em blocos com o framework VTEX IO que faz com que o site fique com estrutura de certa maneira simples e fácil de entender, simplificando o suporte e manutenção do mesmo. 
 
-A estilização do site do nosso "cliente" foi feito através do CSS e styled components para os componentes react.
+A estilização do site do nosso "cliente" foi feito através do **CSS** e **styled components** para os componentes react.
 
 Como o briefing sugeriu utilizamos o tema da **AWS**, também para integrar a nossa loja de produtos. Dentro desta loja os clientes poderão acessar os produtos da AWS divididos em algumas seções que criamos, ou até mesmo pesquisar por algum produto que já tenha em mente. 
 
