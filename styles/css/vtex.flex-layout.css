@@ -157,6 +157,20 @@
   filter: none!important;
 }
 
-.flexRowContent--first-2-footer {
+.flexRowContent--first-2-footer, .flexCol--info-card-example {
   padding: 1rem;
+}
+
+/*------29-08-------*/
+
+.flexRow, .flexRowContent {
+  width: 100% !important;
+}
+
+.flexCol--cards-row-2, .flexCol--cards-row-3 {
+  text-align: left !important;
+}
+
+.flexColChild {
+  height: auto !important;
 }

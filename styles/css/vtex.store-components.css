@@ -173,3 +173,10 @@
   padding-top: 10%;
 }
 
+/*------29-08-------*/
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
+}

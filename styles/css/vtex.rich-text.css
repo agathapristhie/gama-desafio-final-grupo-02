@@ -126,3 +126,14 @@
 .container--r5-2-1-2:hover {
   color:#FF9D00;
 }
+
+.wrapper--footer-1 {
+justify-content: flex-start;
+}
+
+/*------29-08-------*/
+
+
+.paragraph--blue-title {
+  color: #007EB9;
+}
