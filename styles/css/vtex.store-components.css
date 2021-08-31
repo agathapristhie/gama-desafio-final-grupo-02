@@ -11,7 +11,10 @@
 }
 
 .infoCardContainer--info-card-home {
-  max-width: 1520px;
+  max-width: 100%;
+  height: 500px;
+  width: 100%;
+/*  border: 1px solid #232F3E; */
   margin: 0 auto;
   background-color: #e6f1e6;
   padding: 0px;

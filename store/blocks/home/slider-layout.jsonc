@@ -2,7 +2,7 @@
     "slider-layout#aws-home": {
         "props": {
             "preload": true,
-            "height": 500,
+            /* "height": 500, */
             "itemsPerPage": {
                 "desktop": 1,
                 "tablet": 1,
@@ -15,7 +15,8 @@
             "infinite": true,
             "showNavigationArrows": "desktopOnly",
             "arrowSize": 45,
-            "blockClass": "carousel"
+            "blockClass": "carousel",
+            "fullWidth": true
         },
         "children": [
             "info-card#banner-1",
