@@ -1,16 +1,16 @@
 # DESAFIO FINAL - HIRING CODERS - GRUPO 02 - TEMA AWS
 
 ## Integrantes: 
-#### * Cecilia Garcia Amora;
-#### * Felipe Gomes Belarmino;
-#### * Glauber Jesus Loiola;
-#### * Hugo Leonardo Baltazar;
-#### * Jade Pardo Buck;
-#### * Joel Oliveira;
-#### * Lucas dos Santos Xavier;
-#### * Pedro Thiago Marmello;
-#### * Priscila Palma Portes Del Vacchio.
-#### * Vinícius Soares
+* #### Cecilia Garcia Amora;
+* #### Felipe Gomes Belarmino;
+* #### Glauber Jesus Loiola;
+* #### Hugo Leonardo Baltazar;
+* #### Jade Pardo Buck;
+* #### Joel Oliveira;
+* #### Lucas dos Santos Xavier;
+* #### Pedro Thiago Marmello;
+* #### Priscila Palma Portes Del Vacchio.
+* #### Vinícius da Silva Soares
 
 ## DIVISAO DO GRUPO
 Fizemos uma subdivisão em nosso grupo em, **BACKEND e FRONTEND**, com o intuito de agilizar mais algumas das nossas tarefas, ficando algumas pessoas responsáveis pela criação da página (frontEnd) e outras pela instituição do Servidor e APIs (backEnd) conforme pedia o briefing do desafio. 
