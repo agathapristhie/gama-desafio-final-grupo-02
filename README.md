@@ -20,7 +20,13 @@ Para auxiliar e conduzir nosso projeto utilizamos uma das metodologias ágeis, m
 A divisão destas tarefas ficou a cargo com as habilidades de cada dev, tanto no front quanto no backEnd.
 
 ## CONSTRUÇÃO DO SITE - FRONT END
-Na construção da página do nosso "cliente", na parte de front-end, utilizamos a construção em blocos com o framework VTEX IO que faz com que o site fique com estrutura de certa maneira simples e fácil de entender, simplificando o suporte e manutenção do mesmo. 
+Na construção da página do nosso "cliente", na parte de front-end, utilizamos a construção em blocos com o Store Framework da Vtex. Ele usa o Partial Hydration do React e, por conta disso, é possível obter uma maior performance do site. 
+
+Enquanto isso, o React permite a componentização das partes do código, que faz com que o site fique com estrutura de certa maneira simples e fácil de entender, simplificando o suporte e manutenção do mesmo. 
+
+A performance é um dos fatores críticos para o êxito de um e-commerce, pois a velocidade do carregamento da página interfere na quantidade de conversões. Essa foi uma preocupação nossa e, para isso, lançamos mão de medidas como usar o bloco de fold para melhorar o load inicial na home e usar imagens leves, principalmente em svg, localizadas na pasta assets. 
+
+Uma vez que grande parte dos acessos das stores vêm pelo celular, também deixamos o layout responsivo para mobile.
 
 A estilização do site do nosso "cliente" foi feito através do **CSS** e **styled components** para os componentes react.
 
