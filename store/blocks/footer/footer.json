@@ -1,27 +1,145 @@
 {
-  "footer": {
+    "footer": {
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
+
   "footer-layout.desktop": {
     "children": [
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "flex-layout.row#footer-3-desktop",
+      "flex-layout.row#footer-4-desktop"
     ]
   },
+
   "flex-layout.row#footer-1-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
+      "flex-layout.col#footer-1-col-1-desktop",
+      "flex-layout.col#footer-1-col-2-desktop",
+      "flex-layout.col#footer-1-col-3-desktop",
+      "flex-layout.col#footer-1-col-4-desktop",
+      "flex-layout.col#footer-1-col-5-desktop"
     ],
     "props": {
-      "blockClass": "menu-row",
-      "paddingTop": 6,
-      "paddingBottom": 3
+      "blockClass": "first-2-footer",
+      "colGap": "2",
+      "colSizing": "equal",
+      "marginTop": "6",
+      "marginLeft": "15",
+      "marginRight": "15"
+    }
+  },
+
+"flex-layout.col#footer-1-col-1-desktop": {
+    "children":[
+      "rich-text#footer-1-col-1-title",
+      "rich-text#footer-1-col-1-corp"
+    ],
+    "props":{
+      "marginLeft": "15",
+      "marginRight": "15"
+    }
+  },
+
+  "flex-layout.col#footer-1-col-2-desktop":{
+    "children":[
+      "rich-text#footer-1-col-2-title",
+      "rich-text#footer-1-col-2-corp"
+    ]
+  },
+
+  "flex-layout.col#footer-1-col-3-desktop":{
+    "children":[
+      "rich-text#footer-1-col-3-title",
+      "rich-text#footer-1-col-3-corp"
+    ]
+  },
+
+  "flex-layout.col#footer-1-col-4-desktop":{
+    "children":[
+      "rich-text#footer-1-col-4-title",
+      "rich-text#footer-1-col-4-corp"
+    ]
+  },
+
+  "flex-layout.col#footer-1-col-5-desktop":{
+    "children":[
+      "rich-text#footer-1-col-5-title",
+      "social-networks",
+      "rich-text#footer-1-col-5-corp"
+    ],
+    "props":{
+      "marginRight": "15"
+    }
+  },
+
+  "rich-text#footer-1-col-1-title": {
+    "props": {
+      "text": "##### Saiba mais sobre a AWS",
+      "blockClass": "footer-1"
+    }
+  },
+
+  "rich-text#footer-1-col-1-corp": {
+    "props": {
+      "text": "O que é a AWS?\nO que é a computação em nuvem?\nO que é o DevOps?\nO que é um contêiner?\nO que é um data lake?\nSegurança na Nuvem AWS\nNovidades\nBlogs\nPress Releases",
+      "blockClass": "footer-1"
+    }
+  },
+
+  "rich-text#footer-1-col-2-title": {
+    "props": {
+      "text": "##### Recursos da AWS",
+      "blockClass": "footer-1"
+    }
+  },
+
+  "rich-text#footer-1-col-2-corp": {
+    "props": {
+      "text": "Conceitos básicos\nTreinamento e certificação\nPortfólio de soluções da AWS\nCentro de arquitetura\nPerguntas frequentes sobre produtos e tópicos técnicos\nRelatórios de analistas\nRede de parceiros da AWS",
+      "blockClass": "footer-1"
+    }
+  },
+
+  "rich-text#footer-1-col-3-title": {
+    "props": {
+      "text": "##### Desenvolvedores na AWS",
+      "blockClass": "footer-1"
+    }
+  },
+
+  "rich-text#footer-1-col-3-corp": {
+    "props": {
+      "text": "Centro do desenvolvedor\nSDKs e ferramentas\n.NET na AWS\nPython na AWS\nJava na AWS\nPHP na AWS\nJavaScript na AWS",
+      "blockClass": "footer-1"
+    }
+  },
+
+  "rich-text#footer-1-col-4-title": {
+    "props": {
+      "text": "##### Ajuda",
+      "blockClass": "footer-1"
+    }
+  },
+
+  "rich-text#footer-1-col-4-corp": {
+    "props": {
+      "text": "Entre em contato conosco\nCarreiras na AWS\nCrie um tíquete de suporte\nCentral de conhecimento\nVisão geral do AWS Support\nJurídico\n",
+      "blockClass": "footer-1"
+    }
+  },
+
+  "rich-text#footer-1-col-5-title": {
+    "props": {
+      "text": "##### Recursos da AWS",
+      "blockClass": "footer-1"
+    }
+  },
+
+  "rich-text#footer-1-col-5-corp": {
+    "props": {
+      "text": "A Amazon é uma empresa empregadora orientada pelos fundamentos de igualdade de oportunidades e ações afirmativas, que não faz distinção entre *minorias, mulheres, portadores de deficiência, veteranos, identidade de gênero, orientação sexual nem idade*.",
+      "blockClass": "footer-1"
     }
   },
 
@@ -29,12 +147,12 @@
     "props": {
       "socialNetworks": [
         {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
+          "name": "Twitter",
+          "url": "https://www.twitter.com/"
         },
         {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
         },
         {
           "name": "Twitter",
@@ -49,26 +167,40 @@
   },
 
   "flex-layout.row#footer-2-desktop": {
-    "children": ["accepted-payment-methods"],
     "props": {
-      "blockClass": "payment-methods"
-    }
-  },
-  "accepted-payment-methods": {
-    "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+      "blockClass": "first-2"
     }
   },
 
   "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"],
-    "props": {
-      "blockClass": "credits"
+    "children": [
+      "rich-text#languages"
+    ],
+    "props":{
+      "blockClass": "first-2-footer"
     }
   },
+
+  "rich-text#languages": {
+    "props": {
+      "text": "**Idioma عربي | Bahasa Indonesia | Deutsch | English | Español | Français | Italiano | Português | Tiếng Việt | Türkçe | Ρусский | ไทย | 日本語 | 한국어 | 中文 (简体) | 中文 (繁體)**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "footer-1"
+    }
+  },
+
+  "flex-layout.row#footer-4-desktop": {
+    "children": [
+      "rich-text#footer"
+    ]
+  },
+
   "rich-text#footer": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
+      "text": "Privacidade | Termos do site | Preferências de cookies | © 2021, Amazon Web Services, Inc. ou suas afiliadas. Todos os direitos reservados.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
       "blockClass": "footer"
     }
   },
@@ -107,10 +239,12 @@
     },
     "children": ["vtex.menu@2.x:menu#footer-mobile"]
   },
+
   "rich-text#footer-mobile": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
+      "text": "Privacidade | Termos do site | Preferências de cookies | © 2021, Amazon Web Services, Inc. ou suas afiliadas. Todos os direitos reservados.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
     }
   }
 }

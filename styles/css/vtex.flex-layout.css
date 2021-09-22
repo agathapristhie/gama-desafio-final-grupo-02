@@ -16,7 +16,7 @@
   }
 }
 
-.flexRowContent--menu-link {
+/* .flexRowContent--menu-link {
   background-color: #232F3E;
   color: #fff;
 }
@@ -35,16 +35,13 @@
   color: #ffffff;
   font-size: 14px;
 }
-/**teste**/
-.flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink):hover {
-  color: #F19927;
-}
+
 .flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
-  color: #fff;
+  color: #727273;
   font-size: 14px;
 }
 .flexRow--deals {
-  background-color: #ffffff;
+  background-color: #a7afbd;
   padding: 14px 0px;
 }
 
@@ -55,12 +52,6 @@
 .flexRow--deals .flexCol {
   align-items: center;
 }
-/*style borda card*/
-.flexCol{
-  margin: 10px;
-  padding-top: 15px;
-  border-color: #D5DBDB;
-}
 
 .flexCol--filterCol {
   max-width: 500px;
@@ -69,19 +60,12 @@
 
 .flexCol--logoaws{
   background-color: #232F3E;
-
-}
-/*texto dos cards home*/
-.flexColChild{
-  background-color: #ffffff;
 }
 
-.flexColChild--logoaws{
-  background-color: #232F3E;
-  width: 10%;
+/* .flexColChild--logoaws{
   margin-left: 5%;
-  margin-top: 2%;
-}
+  margin-top: 5%;
+} */
 
 .flexCol--productCountCol {
   align-items: flex-start;
@@ -118,3 +102,75 @@
   padding-bottom: 1rem;
 }
 
+.flexRow--inside2, .flexRow--inside3 {
+  background: #F2F4F4;
+}
+
+.flexRow--inside4, .flexRow--inside9{
+  background: #fff;
+}
+
+.flexRow--inside5, .flexRow--inside7, .flexRow--inside8,  .flexRow--inside11 {
+  background: #242F3E;
+  color:#fff;
+}
+
+.flexRow--inside6, .flexRow--inside10 {
+  background: #F2F4F4;
+}
+
+
+.flexRow--inside1, .flexRow--inside4, .flexRow--inside10 {
+  width:100%;
+}
+
+.flexRowContent--teste :global(.vtex-flex-layout-0-x) {
+  background-color: red;
+  font-size: 14px;
+}
+
+.flexRowContent--row2, .flexRowContent--row3{
+  background: #F2F4F4;
+}
+
+.flexCol--cards-row-2, .flexCol--cards-row-3{
+  background: #fff;
+  box-shadow:0 1px 5px #aab7b8;
+  padding: 12px;
+}
+
+.flexCol {
+  text-align: center;
+}
+
+
+.flexRowContent--first-2-footer{
+  background: #232f3e;
+}
+
+
+.stretchChildrenWidth--filter-logos {
+  filter: grayscale(100%);
+}
+
+.stretchChildrenWidth--filter-logos:hover {
+  filter: none!important;
+}
+
+.flexRowContent--first-2-footer, .flexCol--info-card-example {
+  padding: 1rem;
+}
+
+/*------29-08-------*/
+
+.flexRow, .flexRowContent {
+  width: 100% !important;
+}
+
+.flexCol--cards-row-2, .flexCol--cards-row-3 {
+  text-align: left !important;
+}
+
+.flexColChild {
+  height: auto !important;
+}

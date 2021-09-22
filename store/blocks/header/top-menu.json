@@ -4,12 +4,9 @@
       "menu-item#about-us",
       "menu-item#Análises",
       "menu-item#GerenciamentoNuvem",
-      "menu-item#Computação",
-      "menu-item#Contêineres",
-      "menu-item#BancodeDados",
-      "menu-item#Frontend"
+      "menu-item#Computação"
     ]
-  }, 
+  },
   "menu-item#Análises": {
     "props": {
       "id": "menu-item-Análises",
@@ -18,7 +15,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/analises",
         "noFollow": false,
         "tagTitle": "Análises",
         "text": "Análises"
@@ -33,7 +30,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/financeiro",
         "noFollow": false,
         "tagTitle": "Gerenciamento Nuvem",
         "text": "Gerenciamento Financeiro de Nuvem"
@@ -48,55 +45,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/computacao",
         "noFollow": false,
         "tagTitle": "Computação",
         "text": "Computação"
-      }
-    }
-  },
-  "menu-item#Contêineres": {
-    "props": {
-      "id": "menu-item-Contêineres",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Contêineres",
-        "text": "Contêineres"
-      }
-    }
-  },
-  "menu-item#BancodeDados": {
-    "props": {
-      "id": "menu-item-BancodeDados",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "BancodeDados",
-        "text": "Banco de Dados"
-      }
-    }
-  },
-  "menu-item#Frontend": {
-    "props": {
-      "id": "menu-item-Frontend",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Frontend",
-        "text": "Web e plataforma móvel para front-end"
       }
     }
   }

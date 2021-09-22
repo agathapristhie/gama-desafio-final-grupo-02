@@ -1,8 +1,5 @@
-/*texto dos icones abaixo do slider home*/
-.paragraph--deals {
-  color: #232F3E;
-  font-weight: 600;
-  font-size: 14px;
+.container--deals {
+  color: #ffffff;
   text-align: center;
   justify-content: center;
 }
@@ -48,7 +45,7 @@
   max-width: 540px;
   padding-top: 36px;
   padding-bottom: 84px;
-  color: #03034E;
+/*   color: #03034E; */
 }
 
 .container--link .strong {
@@ -70,6 +67,12 @@
   font-weight: 700;
 }
 
+.container--footer{
+  background: #EAEDED;
+  color: #28395C;
+  width: 100%;
+}
+
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;
@@ -89,5 +92,48 @@
 
   .container--title .paragraph {
     line-height: 1.3em;
+    text-align: start;
   }
+}
+
+  .paragraph--footer-1, .heading--footer-1 {
+    color:#fff;
+  }
+
+
+  .container--footer {
+    background-color: #EAEDED;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .paragraph--footer {
+    color:#242F3E;
+  }
+
+.container--r2-1{
+  text-align: center;
+}
+
+.container--r5-1, .container--r11-1 {
+  color:#fff;
+}
+
+.container--r5-2-1-2 {
+  color:#fff;
+}
+
+.container--r5-2-1-2:hover {
+  color:#FF9D00;
+}
+
+.wrapper--footer-1 {
+justify-content: flex-start;
+}
+
+/*------29-08-------*/
+
+
+.paragraph--blue-title {
+  color: #007EB9;
 }
